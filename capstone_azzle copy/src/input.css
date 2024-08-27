@@ -5,8 +5,10 @@
 * {
   font-family: "DM Sans", "Inter", sans-serif;
 }
-body {
-  background-color: antiquewhite;
+@import "animate.css/animate.min.css";
+
+.run {
+  transition: all 0.3s;
 }
 /* nút đóng tắt menu  */
 .header_button {
@@ -53,7 +55,6 @@ header .right_button::before {
 .menu_list {
   border-top: 1px solid #e5e5e5;
 }
-
 /* header block  */
 .header_block {
   transition: all 0.5s;
@@ -85,46 +86,25 @@ header .right_button::before {
   left: 22px;
 }
 /* .header_absolute */
-.header_absolute {
-  @apply top-0 left-0 w-full h-full absolute;
-}
+
 /* banner  */
 .bg_banner {
   background-color: #efeae3;
   border-radius: 0 0 30px 30px;
 }
 .text_banner {
-  @apply text-xl hover:text-red-500 font-semibold;
+  @apply text-xl hover:text-[#FE330A] font-semibold;
 }
 /* trusted  */
 .border_img {
   border-radius: 1.5rem;
 }
-/* number  */
-.number_title {
-  @apply text-5xl font-bold xl:text-[80px] leading-[80px]
-  text-[#fe330a];
-}
 /* delivering  */
-.delivering_title {
-  @apply text-4xl font-bold xl:text-[80px] leading-[80px];
-}
-.delivering_desc {
-  @apply text-lg pt-6 leading-6 xl:text-[21px];
-}
 .delivering_button {
   @apply bg-black text-white px-6 py-4 text-base font-bold;
   border-radius: 2.5rem;
 }
-
 /* .values  */
-.values_h2 {
-  @apply text-4xl font-bold lg:mb-12 xl:mb-20  relative lg:text-6xl xl:text-[80px];
-}
-.values_h3 {
-  @apply p-3 text-3xl font-bold;
-}
-
 .values .values_item:before {
   content: "";
   width: 100%;
@@ -145,13 +125,6 @@ header .right_button::before {
   }
 }
 /* team  */
-
 .team_button {
   @apply bg-black text-white px-6 py-4 text-base font-bold rounded-[2.5rem] mt-5 mb-10;
-}
-.team_list {
-  @apply p-5 rounded-xl bg-[#EFEAE3];
-}
-.team_social {
-  @apply w-7 h-7 rounded-[50%] bg-black text-white block leading-7 text-center hover:bg-[#FE330A] hover:text-black;
 }
