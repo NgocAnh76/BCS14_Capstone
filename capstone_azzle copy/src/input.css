@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "DM Sans", "Inter", sans-serif;
+}
+body {
+  background-color: antiquewhite;
+}
+/* nút đóng tắt menu  */
+.header_button {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  margin-left: 40px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+header .right_button {
+  width: 30px;
+  height: 0.75px;
+  display: block;
+  background-color: black;
+  position: relative;
+}
+header .right_button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: black;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+}
+header .right_button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: black;
+  position: absolute;
+  top: -7px;
+  left: 0;
+}
+/* button close menu  */
+.close_menu {
+  padding: 15px;
+  border-left: 1px solid #e5e5e5;
+}
+.menu_list {
+  border-top: 1px solid #e5e5e5;
+}
+
+/* header block  */
+.header_block {
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon_demo {
+  transition: all 0.3s;
+}
+.social_item:hover .icon_demo {
+  @apply -rotate-90;
+}
+.social_item:hover .header_block {
+  @apply translate-y-0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header_block::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -12px;
+  left: 22px;
+}
+/* .header_absolute */
+.header_absolute {
+  @apply top-0 left-0 w-full h-full absolute;
+}
+/* banner  */
+.bg_banner {
+  background-color: #efeae3;
+  border-radius: 0 0 30px 30px;
+}
+.text_banner {
+  @apply text-xl hover:text-red-500 font-semibold;
+}
+/* trusted  */
+.border_img {
+  border-radius: 1.5rem;
+}
+/* number  */
+.number_title {
+  @apply text-5xl font-bold xl:text-[80px] leading-[80px]
+  text-[#fe330a];
+}
+/* delivering  */
+.delivering_title {
+  @apply text-4xl font-bold xl:text-[80px] leading-[80px];
+}
+.delivering_desc {
+  @apply text-lg pt-6 leading-6 xl:text-[21px];
+}
+.delivering_button {
+  @apply bg-black text-white px-6 py-4 text-base font-bold;
+  border-radius: 2.5rem;
+}
+
+/* .values  */
+.values_h2 {
+  @apply text-4xl font-bold lg:mb-12 xl:mb-20  relative lg:text-6xl xl:text-[80px];
+}
+.values_h3 {
+  @apply p-3 text-3xl font-bold;
+}
+
+.values .values_item:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: transparent;
+  border-radius: 5px;
+  position: relative;
+  left: 0;
+  top: -64px;
+  display: block;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+@media (min-width: 1280px) {
+  .values_item:hover::before {
+    background-color: #fe330a;
+    transform: scaleX(1);
+  }
+}
+/* team  */
+
+.team_button {
+  @apply bg-black text-white px-6 py-4 text-base font-bold rounded-[2.5rem] mt-5 mb-10;
+}
+.team_list {
+  @apply p-5 rounded-xl bg-[#EFEAE3];
+}
+.team_social {
+  @apply w-7 h-7 rounded-[50%] bg-black text-white block leading-7 text-center hover:bg-[#FE330A] hover:text-black;
+}
