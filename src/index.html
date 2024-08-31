@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- css -->
     <link href="./css/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/input.css" />
@@ -51,19 +57,19 @@
               <!-- content -->
               <div class="mb-10 lg:mb-16 xl:mb-20">
                 <div class="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
-                  <h2 class="w-100%">Core features that make it valuable</h2>
+                  <h2 class="animate__animated animate__fadeInUp wow w-100%">
+                    Core features that make it valuable
+                  </h2>
                 </div>
               </div>
               <!-- content end -->
 
               <!-- service list -->
               <ul
-                class="text_hover grid grid-cols-1 gap-[2px] rounded-[10px] border-2 overflow-hidden border-black bg-black sm:grid-cols-2 lg:grid-cols-4"
+                class="animate__animated animate__fadeInUp wow animate__delay-1s grid grid-cols-1 gap-[2px] rounded-[10px] border-2 overflow-hidden border-black bg-black sm:grid-cols-2 lg:grid-cols-4"
               >
                 <!-- service item 1 -->
-                <li
-                  class="group bg-white p-[30px] ease-in-out transition-all duration-300 hover:bg-black"
-                >
+                <li class="group bg-white p-[30px] duration-300 hover:bg-black">
                   <div class="relative mb-9 h-[70px] w-[70px]">
                     <img
                       src="../img/svg-export/svgexport-1.png"
@@ -84,7 +90,7 @@
                   >
                     <a
                       href="service_details.html"
-                      class="hover:text-colorOrangyRed"
+                      class="hover:text-[#fe330a] duration-300"
                       >Resource Flexibility</a
                     >
                   </h3>
@@ -113,9 +119,7 @@
                 </li>
 
                 <!-- service item 2 -->
-                <li
-                  class="group bg-white p-[30px] ease-in-out transition-all duration-300 hover:bg-black"
-                >
+                <li class="group bg-white p-[30px] duration-300 hover:bg-black">
                   <div class="relative mb-9 h-[70px] w-[70px]">
                     <img
                       src="../img/svg-export/service-icon-black-2.png"
@@ -136,7 +140,7 @@
                   >
                     <a
                       href="service_details.html"
-                      class="hover:text-colorOrangyRed"
+                      class="hover:text-[#fe330a] duration-300"
                       >Managed Services</a
                     >
                   </h3>
@@ -165,9 +169,7 @@
                 </li>
 
                 <!-- service item 3 -->
-                <li
-                  class="group bg-white p-[30px] ease-in-out transition-all duration-300 hover:bg-black"
-                >
+                <li class="group bg-white p-[30px] duration-300 hover:bg-black">
                   <div class="relative mb-9 h-[70px] w-[70px]">
                     <img
                       src="../img/svg-export/service-icon-black-3.png"
@@ -188,7 +190,7 @@
                   >
                     <a
                       href="service_details.html"
-                      class="hover:text-colorOrangyRed"
+                      class="hover:text-[#fe330a] duration-300"
                       >Web-Based Access</a
                     >
                   </h3>
@@ -217,9 +219,7 @@
                 </li>
 
                 <!-- service item 4 -->
-                <li
-                  class="group bg-white p-[30px] ease-in-out transition-all duration-300 hover:bg-black"
-                >
+                <li class="group bg-white p-[30px] duration-300 hover:bg-black">
                   <div class="relative mb-9 h-[70px] w-[70px]">
                     <img
                       src="../img/svg-export/service-icon-black-4.png"
@@ -240,7 +240,7 @@
                   >
                     <a
                       href="service_details.html"
-                      class="hover:text-colorOrangyRed"
+                      class="hover:text-[#fe330a] duration-300"
                       >Resource Flexibility</a
                     >
                   </h3>
@@ -627,5 +627,15 @@
     </script>
     <!-- fslightbox -->
     <script src="./js/fs_lightbox/fslightbox.js"></script>
+    <!-- wow js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
