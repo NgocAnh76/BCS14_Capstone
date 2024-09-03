@@ -13,6 +13,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- flow bite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <!-- css -->
     <link href="./css/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/input.css" />
@@ -56,7 +66,9 @@
             <div class="container">
               <!-- service content -->
               <div class="text-center mb-10 lg:mb-16 xl:mb-20">
-                <div class="mx-auto max-w-md lg:max-w-xl xl:max-w-[950px]">
+                <div
+                  class="mx-auto max-w-md lg:max-w-xl xl:max-w-[950px] animate__animated animate__fadeInUp wow animate__delay-1s"
+                >
                   <h2>We provide smart AI solutions for all tasks</h2>
                 </div>
               </div>
@@ -64,7 +76,7 @@
 
               <!-- service list -->
               <ul
-                class="text_hover grid grid-cols-1 grid-rows-2 gap-[2px] rounded-[10px] border-2 overflow-hidden border-black bg-black sm:grid-cols-2 lg:grid-cols-4"
+                class="text_hover grid grid-cols-1 grid-rows-2 gap-[2px] rounded-[10px] border-2 overflow-hidden border-black bg-black sm:grid-cols-2 lg:grid-cols-4 animate__animated animate__fadeInUp wow animate__delay-1s"
               >
                 <!-- service item 1 -->
                 <li class="group bg-white p-[30px] duration-300 hover:bg-black">
@@ -482,7 +494,9 @@
             <div class="container">
               <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
                 <!-- left -->
-                <div class="flex flex-col">
+                <div
+                  class="flex flex-col animate__animated animate__fadeInLeft wow animate__delay-1s"
+                >
                   <!-- left title -->
                   <div class="mb-6">
                     <div class="mx-auto md:mx-0 md:max-w-none">
@@ -499,7 +513,7 @@
                       industries.
                     </p>
                     <button
-                      class="rounded-[50px] mt-5 border-black text-white bg-black py-4 px-6 hover:bg-[#fe330a] hover:bg- duration-300"
+                      class="rounded-[50px] mt-5 border-black text-white bg-black py-4 px-6 hover:bg-[#fe330a] hover:transform-[translate-y-5] duration-300"
                     >
                       Ask you questions
                     </button>
@@ -508,74 +522,128 @@
                   <!-- left end -->
                 </div>
                 <!-- right -->
-                <div class="md:ml-10 lg:ml-20 xl:ml-32">
+                <div
+                  class="md:ml-10 lg:ml-20 xl:ml-32 animate__animated animate__fadeInRight wow animate__delay-1s"
+                >
                   <!-- FAQ list -->
-                  <ul class="faq_list">
-                    <li
-                      class="faq_item border-b-[1px] border-[#dbd6cf] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                  <div
+                    id="accordion-flush"
+                    class=""
+                    data-accordion="collapse"
+                    data-active-classes="bg-white text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                    data-inactive-classes="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                  >
+                    <div id="accordion-flush-heading-1" class="">
+                      <button
+                        id="myButton"
+                        type="button"
+                        class="button flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                        data-accordion-target="#accordion-flush-body-1"
+                        aria-expanded="true"
+                        aria-controls="accordion-flush-body-1"
+                      >
+                        <span
+                          class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                          >How do I start AI SaaS?
+                        </span>
+                        <img
+                          src="../img/svg-export/plus.png"
+                          data-accordion-icon
+                          class="rotate-45px shrink-0"
+                          aria-hidden="true"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                    <div
+                      id="accordion-flush-body-1"
+                      class="hidden"
+                      aria-labelledby="accordion-flush-heading-1"
                     >
-                      <div
-                        class="faq_item_title flex justify-between items-center text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                      >
-                        <p>How do I start AI SaaS?</p>
-                        <div class="faq_list_icon">
-                          <img src="../img/svg-export/plus.png" alt="" />
-                        </div>
-                      </div>
-                      <div
-                        class="faq_item_subtitle text-[#2c2c2c] pt-5 text-xl"
-                      >
-                        <p>
+                      <div class="border-b border-gray-200">
+                        <p class="text-[#2c2c2c] py-5 text-xl">
                           Go to the our official website and require users to
                           create an account. You'll need to provide some basic
                           information and agree to our terms and conditions.
                         </p>
                       </div>
-                    </li>
-                    <li
-                      class="faq_item border-b-[1px] border-[#dbd6cf] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                    </div>
+                    <div id="accordion-flush-heading-2">
+                      <button
+                        type="button"
+                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                        data-accordion-target="#accordion-flush-body-2"
+                        aria-expanded="false"
+                        aria-controls="accordion-flush-body-2"
+                      >
+                        <span
+                          class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                          >Can I customize AI SaaS solutions?
+                        </span>
+
+                        <img
+                          src="../img/svg-export/plus.png"
+                          data-accordion-icon
+                          class="rotate-45px shrink-0"
+                          aria-hidden="true"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                    <div
+                      id="accordion-flush-body-2"
+                      class="hidden"
+                      aria-labelledby="accordion-flush-heading-2"
                     >
-                      <div
-                        class="faq_item_title flex justify-between items-center text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                      >
-                        <p>How do I start AI SaaS?</p>
-                        <div class="faq_list_icon">
-                          <img src="../img/svg-export/plus.png" alt="" />
-                        </div>
-                      </div>
-                      <div
-                        class="faq_item_subtitle text-[#2c2c2c] pt-5 text-xl"
-                      >
-                        <p>
+                      <div class="py-5 border-b border-gray-200">
+                        <p class="text-[#2c2c2c] text-xl">
                           Go to the our official website and require users to
                           create an account. You'll need to provide some basic
                           information and agree to our terms and conditions.
                         </p>
                       </div>
-                    </li>
-                    <li
-                      class="faq_item border-b-[1px] border-[#dbd6cf] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                    </div>
+                    <div id="accordion-flush-heading-3">
+                      <button
+                        type="button"
+                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                        data-accordion-target="#accordion-flush-body-3"
+                        aria-expanded="false"
+                        aria-controls="accordion-flush-body-3"
+                      >
+                        <span
+                          class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                          >How can AI benefit my business?
+                        </span>
+                        <img
+                          src="../img/svg-export/plus.png"
+                          data-accordion-icon
+                          class="rotate-45px shrink-0"
+                          aria-hidden="true"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                    <div
+                      id="accordion-flush-body-3"
+                      class="hidden"
+                      aria-labelledby="accordion-flush-heading-3"
                     >
-                      <div
-                        class="faq_item_title flex justify-between items-center text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                      >
-                        <p>How do I start AI SaaS?</p>
-                        <div class="faq_list_icon">
-                          <img src="../img/svg-export/plus.png" alt="" />
-                        </div>
-                      </div>
-                      <div
-                        class="faq_item_subtitle text-[#2c2c2c] pt-5 text-xl"
-                      >
-                        <p>
+                      <div class="">
+                        <p class="text-[#2c2c2c] py-5 text-xl">
                           Go to the our official website and require users to
                           create an account. You'll need to provide some basic
                           information and agree to our terms and conditions.
                         </p>
                       </div>
-                    </li>
-                    <!-- list end -->
-                  </ul>
+                    </div>
+                  </div>
                   <!-- right end -->
                 </div>
               </div>
@@ -587,5 +655,17 @@
         <!-- FAQ end -->
       </main>
     </div>
+    <!-- wow js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- flow bite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   </body>
 </html>

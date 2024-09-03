@@ -96,3 +96,11 @@ h5 {
 .banner_nav li:last-of-type {
     color: #fe330a;
 }
+
+/* FAQ plus icon */
+
+#accordion-flush img {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
