@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+/* h1 responsive */
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+}
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+}
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 100px;
+    }
+}
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 120px;
+    }
+}
+
+/* h2 responsive */
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+@media (min-width: 992px) {
+    h2 {
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+}
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+}
+@media (min-width: 1400px) {
+    h2 {
+        font-size: 80px;
+        line-height: 1;
+    }
+}
+
+/* h4 responsive */
+h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    line-height: 1.33;
+    letter-spacing: 0em;
+}
+
+/* h5 responsive */
+h5 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    line-height: 1.28;
+}
+@media (min-width: 992px) {
+    h5 {
+        font-size: 28px;
+    }
+}
+/* service page */
+/* banner */
+.banner_wrapper {
+    background-color: #efeae3;
+    border-bottom-right-radius: 50px ;
+    border-bottom-left-radius: 50px;
+}
+.banner_nav {
+    font-size: 20px;
+    font-weight: 600;
+}
+.banner_nav li:last-of-type {
+    color: #fe330a;
+}
+
+/* FAQ plus icon */
+
+#accordion-flush img {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
