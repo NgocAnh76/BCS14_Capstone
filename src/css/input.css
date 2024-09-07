@@ -228,3 +228,9 @@ bg-colorLinenRuffle {
 .map-section {
   margin-top: 160px;
 }
+
+/* accordion */
+.accordion .accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
