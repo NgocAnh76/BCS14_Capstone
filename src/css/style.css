@@ -99,8 +99,11 @@ h5 {
 
 /* FAQ plus icon */
 
+<<<<<<< HEAD
+=======
 #accordion-flush img {
     display: inline-block;
     transition: transform 0.3s ease;
 }
+>>>>>>> NgocAnh
 

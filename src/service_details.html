@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>service_details</title>
+    <title>Service details</title>
 
     <!-- font awesome -->
     <link
@@ -24,40 +24,295 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="page-wrapper relative z-[1] bg-white">
-      <main class="main-wrapper relative overflow-hidden">
-        <!-- banner start -->
-        <section id="banner">
-          <!-- spacer -->
-          <div class="banner_wrapper pb-[130px] pt-[195px]">
-            <!-- container -->
-            <div class="container">
-              <div class="banner_block">
-                <h1 class="banner_title text-center pb-[48px]">
-                  Data Analytics
-                </h1>
-                <ul class="banner_nav text_hover flex justify-center space-x-5">
-                  <li class="hover:text-[#fe330a] duration-300 cursor-pointer">
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </li>
-                  <li class="hover:text-[#fe330a] duration-300 cursor-pointer">
-                    Our Services
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </li>
-                  <li>Service Details</li>
-                </ul>
-              </div>
-              <!-- container end -->
-            </div>
-            <!-- spacer end -->
+    <!-- header  -->
+    <header class="top-0 left-0 w-full h-auto absolute">
+      <div class="container">
+        <div
+          class="header_title flex item-center justify-between mx-5 mt-4 pt-5 relative"
+        >
+          <div class="header_left">
+            <a href="#">
+              <img src="../img/logo-dark.png" alt="" />
+            </a>
           </div>
-          <!-- banner end -->
-        </section>
+          <div
+            class="header_social hidden lg:flex items-center justify-between"
+          >
+            <ul class="flex justify-between gap-[30px] xl:gap-20">
+              <li class="social_item cursor-pointer">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Demo
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- .header_block  -->
+
+                <ul
+                  class="header_block min-w-[200px] p-5 bg-white rounded-lg absolute w-[200px] mt-7 top-[100%] translate-y-5"
+                >
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="./index.html"
+                      >Home 01</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      href="#"
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      >Home 02</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Home 03</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Home 04</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="cursor-pointer">
+                <a
+                  class="text-base text-black font-semibold py-5"
+                  href="./about.html"
+                >
+                  About
+                </a>
+              </li>
+              <li class="social_item cursor-pointer relative">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Service
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- header block  -->
+                <ul
+                  class="header_block p-5 bg-white rounded-lg absolute min-w-[200px] mt-7 top-[100%] translate-y-5"
+                >
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="./services.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="./service_details.html"
+                      >Service Details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="social_item cursor-pointer relative">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Pages
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- header blog  -->
+                <ul
+                  class="header_block min-w-[200px] p-5 bg-white rounded-lg absolute w-[200px] mt-7 top-[100%] translate-y-5"
+                >
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Team</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Portfolio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="cursor-pointer relative">
+                <a
+                  class="text-base text-black font-semibold py-5"
+                  href="./contact.html"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header_login">
+            <button
+              class="header_login1 border-1 border-red-700 text-black font-bold py-2 px-6 rounded-3xl mr-5 hover:bg-red-600 hover:text-white transition-all duration-500 focus:border-none hidden lg:inline-block"
+            >
+              Login
+            </button>
+            <button
+              class="text-white bg-black font-bold py-2 px-6 rounded-3xl mr-5 hover:bg-red-600 focus:text-white focus:border-none hidden lg:inline-block"
+            >
+              Sign up free
+            </button>
+            <div class="header_right block lg:hidden">
+              <button
+                class="bg-transparent font-medium focus:outline-none header_button"
+                type="button"
+                data-drawer-target="drawer-navigation"
+                data-drawer-show="drawer-navigation"
+                aria-controls="drawer-navigation"
+              >
+                <div class=" ">
+                  <span class="right_button"></span>
+                  <span class="right_button"></span>
+                  <span class="right_button"></span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- drawer init and show -->
+
+        <!-- drawer component -->
+        <div
+          id="drawer-navigation"
+          class="fixed top-0 left-0 z-40 w-80 h-screen overflow-y-auto transition-transform -translate-x-full bg-white"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <h5
+            id="drawer-navigation-label"
+            class="text-base font-semibold text-transparent uppercase text-tr"
+          >
+            Menu
+          </h5>
+          <button
+            type="button"
+            data-drawer-hide="drawer-navigation"
+            aria-controls="drawer-navigation"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm absolute top-0 right-0 inline-flex items-center close_menu"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="py-4 overflow-y-auto">
+            <ul>
+              <li class="menu_list py-[10px] flex mt-[10px]">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Home
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a class="font-semibold ml-5" href="#"> About </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Service
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Pages
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a class="font-semibold ml-5" href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner  -->
+    <section class="banner bg_banner">
+      <div class="container">
+        <div class="header_content text-center py-20 pt-40">
+          <h1
+            class="text-black text-5xl font-bold pb-8 xl:text-[120px] leading-[120px]"
+          >
+            Data Analytics
+          </h1>
+          <ul class="flex items-center justify-center">
+            <li>
+              <a class="run text-xl hover:text-[#FE330A] font-semibold" href="#"
+                >Home</a
+              >
+            </li>
+            <i class="fa-solid fa-angle-right px-3"></i>
+            <li>
+              <a class="run text-xl hover:text-[#FE330A] font-semibold" href="#"
+                >Services</a
+              >
+            </li>
+            <i class="fa-solid fa-angle-right px-3"></i>
+            <li>
+              <a class="text-xl text-[#FE330A] font-semibold" href="#"
+                >Data Analytics
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="page-wrapper relative bg-white">
+      <main class="main-wrapper relative overflow-hidden">
         <!-- analyze -->
         <section id="content_1">
           <!-- spacer -->
@@ -121,7 +376,7 @@
                   class="order-1 md:order-2 rounded-md animate__animated animate__fadeInRight wow animate__delay-1s"
                 >
                   <img
-                    src="../img/content-image-1.jpg"
+                    src="../img/download (2).jpeg"
                     width="526"
                     height="450"
                     class="h-auto w-full"
@@ -154,7 +409,7 @@
                   class="order-2 overflow-hidden rounded-md md:order-1 animate__animated animate__fadeInRight wow animate__delay-1s"
                 >
                   <img
-                    src="../img/serv_details/content-image-4.jpg"
+                    src="../img/download (2).jpeg"
                     alt=""
                     width="520"
                     height="450"
@@ -214,12 +469,12 @@
             class="mx-auto max-w-[1500px] px-5 pb-[150px] animate__animated animate__fadeInUp wow animate__delay-1s"
           >
             <div
-              class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black w-full h-[700px] lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]"
+              class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]"
             >
               <!-- left -->
               <div class="relative lg:round-[50px]">
                 <img
-                  src="../img/funfact-image.jpg"
+                  src="../img/download (33).jpeg"
                   alt=""
                   width="720"
                   height="785"
@@ -356,7 +611,7 @@
                   class="order-1 md:order-2 rounded-md animate__animated animate__fadeInRight wow animate__delay-1s"
                 >
                   <img
-                    src="../img/content-image-1.jpg"
+                    src="../img/download (2).jpeg"
                     width="526"
                     height="450"
                     class="h-auto w-full"
@@ -372,6 +627,219 @@
         </section>
       </main>
     </div>
+    <!-- footer  -->
+    <section
+      class="relative z-[1] -mt-[70px] bg_banner overflow-hidden rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[50px] lg:rounded-tr-[50px]"
+    >
+      <footer>
+        <div class="py-[50px] xl:pb-[100px] xl:pt-[130px]">
+          <div class="overflow-hidden">
+            <!-- Footer Text Slider -->
+            <div class="footer-text-slider">
+              <div class="flex items-center">
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="global-container">
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- Footer Center -->
+          <div
+            class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px] mx-3"
+          >
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-8 w-full xl:px-18">
+              <a class="inline-block" href="/"
+                ><img
+                  src="../img/logo-dark.png"
+                  alt="logo"
+                  width="96"
+                  height="24"
+              /></a>
+              <p>
+                Our mission is to harness the power of AI to solve complex
+                business challenges &amp; decision-makers with data-driven
+                insights, and enhance user experiences across digital platforms.
+              </p>
+              <p>
+                Website: <a href="https://www.example.com">www.example.com</a>
+              </p>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Primary Pages
+              </h4>
+              <!-- Footer Title -->
+
+              <!-- Footer Navbar -->
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/about"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/services"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/pricing"
+                    >pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Utility pages
+              </h4>
+              <!-- Footer Title -->
+
+              <!-- Footer Navbar -->
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/signup"
+                    >Signup</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/login"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/error-404"
+                    >404 Not found</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/reset-password"
+                    >Password Reset</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Subscribe to our newsletter
+              </h4>
+              <!-- Footer Title -->
+              <!-- Footer Subscriber Form -->
+              <form action="#" method="post" class="">
+                <div class="relative h-[50px] max-w-[300px]">
+                  <input
+                    type="email"
+                    name="newsletter-email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
+                    required=""
+                  />
+                  <button
+                    type="submit"
+                    class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500"
+                  >
+                    <img
+                      src="../img/svg-export/newsletter.svg"
+                      alt="newsletter"
+                    />
+                  </button>
+                </div>
+              </form>
+              <!-- Footer Subscriber Form -->
+            </div>
+            <!-- Footer Widget -->
+          </div>
+          <!-- Footer Center -->
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- Footer Bottom -->
+          <div class="py-9 text-center">
+            <p>© Copyright 2023, All Rights Reserved by Mthemeus</p>
+          </div>
+          <!-- Footer Bottom -->
+        </div>
+      </footer>
+    </section>
     <!-- jquery cdn -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -380,12 +848,13 @@
       referrerpolicy="no-referrer"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./js/count_up/jquery.countup.js"></script>
+    <!-- countup -->
+    <script src="../countup_js/jquery.countup.js"></script>
     <script>
       $(".counter").countUp({
         time: 1700,
@@ -405,3 +874,14 @@
     </script>
   </body>
 </html>
+
+<!-- button hover
+<button
+  class="relative group border-2 rounded-[50px] mt-5 text-white overflow-hidden py-4 px-6 after:absolute after:left-0 after:top-0 after:z-[-2] after:bg-black after:border-black after:w-full after:h-full"
+>
+  <div
+    class="before:content-[''] before:absolute before:top-[-100%] before:left-0 before:w-full before:h-full before:z-[-1] before:bg-[#fe330a] before:transition-all before:duration-500 before:transform group-hover:before:translate-y-full"
+  >
+    Ask you questions
+  </div>
+</button> -->

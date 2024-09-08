@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>service</title>
+    <title>Services</title>
 
     <!-- font awesome -->
     <link
@@ -24,40 +24,295 @@
       rel="stylesheet"
     />
     <!-- css -->
-    <link href="./output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./input.css" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/input.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- header -->
+    <!-- header  -->
+    <header class="top-0 left-0 w-full h-auto absolute">
+      <div class="container">
+        <div
+          class="header_title flex item-center justify-between mx-5 mt-4 pt-5 relative"
+        >
+          <div class="header_left">
+            <a href="#">
+              <img src="../img/logo-dark.png" alt="" />
+            </a>
+          </div>
+          <div
+            class="header_social hidden lg:flex items-center justify-between"
+          >
+            <ul class="flex justify-between gap-[30px] xl:gap-20">
+              <li class="social_item cursor-pointer">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Demo
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- .header_block  -->
+
+                <ul
+                  class="header_block min-w-[200px] p-5 bg-white rounded-lg absolute w-[200px] mt-7 top-[100%] translate-y-5"
+                >
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="./index.html"
+                      >Home 01</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      href="#"
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      >Home 02</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Home 03</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Home 04</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="cursor-pointer">
+                <a
+                  class="text-base text-black font-semibold py-5"
+                  href="./about.html"
+                >
+                  About
+                </a>
+              </li>
+              <li class="social_item cursor-pointer relative">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Service
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- header block  -->
+                <ul
+                  class="header_block p-5 bg-white rounded-lg absolute min-w-[200px] mt-7 top-[100%] translate-y-5"
+                >
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="./services.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="./service_details.html"
+                      >Service Details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="social_item cursor-pointer relative">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Pages
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- header blog  -->
+                <ul
+                  class="header_block min-w-[200px] p-5 bg-white rounded-lg absolute w-[200px] mt-7 top-[100%] translate-y-5"
+                >
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Team</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Portfolio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="cursor-pointer relative">
+                <a
+                  class="text-base text-black font-semibold py-5"
+                  href="./contact.html"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header_login">
+            <button
+              class="header_login1 text-black font-bold py-2 px-6 rounded-3xl mr-5 border-stone-400 hover:bg-red-600 hover:text-white focus:border-none hidden lg:inline-block"
+            >
+              Login
+            </button>
+            <button
+              class="text-white bg-black font-bold py-2 px-6 rounded-3xl mr-5 hover:bg-red-600 focus:text-white focus:border-none hidden lg:inline-block"
+            >
+              Sign up free
+            </button>
+            <div class="header_right block lg:hidden">
+              <button
+                class="bg-transparent font-medium focus:outline-none header_button"
+                type="button"
+                data-drawer-target="drawer-navigation"
+                data-drawer-show="drawer-navigation"
+                aria-controls="drawer-navigation"
+              >
+                <div class=" ">
+                  <span class="right_button"></span>
+                  <span class="right_button"></span>
+                  <span class="right_button"></span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- drawer init and show -->
+
+        <!-- drawer component -->
+        <div
+          id="drawer-navigation"
+          class="fixed top-0 left-0 z-40 w-80 h-screen overflow-y-auto transition-transform -translate-x-full bg-white"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <h5
+            id="drawer-navigation-label"
+            class="text-base font-semibold text-transparent uppercase text-tr"
+          >
+            Menu
+          </h5>
+          <button
+            type="button"
+            data-drawer-hide="drawer-navigation"
+            aria-controls="drawer-navigation"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm absolute top-0 right-0 inline-flex items-center close_menu"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="py-4 overflow-y-auto">
+            <ul>
+              <li class="menu_list py-[10px] flex mt-[10px]">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Home
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a class="font-semibold ml-5" href="#"> About </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Service
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Pages
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a class="font-semibold ml-5" href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner  -->
+    <section class="banner bg_banner">
+      <div class="container">
+        <div class="header_content text-center py-20 pt-40">
+          <h1
+            class="text-black text-5xl font-bold pb-8 xl:text-[120px] leading-[120px]"
+          >
+            Our Services
+          </h1>
+          <ul class="flex items-center justify-center">
+            <li>
+              <a class="run text-xl hover:text-[#FE330A] font-semibold" href="#"
+                >Home</a
+              >
+            </li>
+            <i class="fa-solid fa-angle-right px-3"></i>
+            <li>
+              <a class="text-xl text-[#FE330A] font-semibold" href="#"
+                >Our Services</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <div class="page-wrapper relative z-[1] bg-white">
       <main class="main-wrapper relative overflow-hidden">
-        <!-- banner start -->
-        <section id="banner">
-          <!-- spacer -->
-          <div class="banner_wrapper pb-[130px] pt-[195px]">
-            <!-- container -->
-            <div class="container">
-              <div class="banner_block">
-                <h1 class="banner_title text-center pb-[48px]">Our Services</h1>
-                <ul class="banner_nav text_hover flex justify-center space-x-5">
-                  <li class="hover:text-[#fe330a] duration-300 cursor-pointer">
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </li>
-                  <li>Our Services</li>
-                </ul>
-              </div>
-              <!-- container end -->
-            </div>
-            <!-- spacer end -->
-          </div>
-          <!-- banner end -->
-        </section>
-
         <!-- service start -->
         <section id="service">
           <!-- spacer -->
@@ -82,13 +337,13 @@
                 <li class="group bg-white p-[30px] duration-300 hover:bg-black">
                   <div class="relative mb-9 h-[70px] w-[70px]">
                     <img
-                      src="../img/svg-export/svgexport-1.png"
+                      src="../img/svg-export/svgexport-1.svg"
                       alt=""
                       width="70"
                       height="70"
                     />
                     <img
-                      src="../img/svg-export/service-icon-orange-1.png"
+                      src="../img/svg-export/service-icon-orange-1.svg"
                       alt=""
                       width="70"
                       height="70"
@@ -113,13 +368,13 @@
                     class="relative w-[30px] h-[30px] inline-block duration-300"
                   >
                     <img
-                      src="../img/svg-export/arrow-right-black.png"
+                      src="../img/svg-export/arrow-right-black.svg"
                       alt=""
                       width="30"
                       height="30"
                     />
                     <img
-                      src="../img/svg-export/arrow-right-black-1.png"
+                      src="../img/svg-export/arrow-right-black-1.svg"
                       class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
                       width="30"
                       height="30"
@@ -132,13 +387,13 @@
                 <li class="group bg-white p-[30px] duration-300 hover:bg-black">
                   <div class="relative mb-9 h-[70px] w-[70px]">
                     <img
-                      src="../img/svg-export/service-icon-black-2.png"
+                      src="../img/svg-export/service-icon-black-2.svg"
                       alt=""
                       width="70"
                       height="70"
                     />
                     <img
-                      src="../img/svg-export/service-icon-orange-1-1.png"
+                      src="../img/svg-export/service-icon-orange-1-1.svg"
                       alt=""
                       width="70"
                       height="70"
@@ -163,13 +418,13 @@
                     class="relative w-[30px] h-[30px] inline-block duration-300"
                   >
                     <img
-                      src="../img/svg-export/arrow-right-black.png"
+                      src="../img/svg-export/arrow-right-black.svg"
                       alt=""
                       width="30"
                       height="30"
                     />
                     <img
-                      src="../img/svg-export/arrow-right-black-1.png"
+                      src="../img/svg-export/arrow-right-black-1.svg"
                       class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
                       width="30"
                       height="30"
@@ -182,13 +437,13 @@
                 <li class="group bg-white p-[30px] duration-300 hover:bg-black">
                   <div class="relative mb-9 h-[70px] w-[70px]">
                     <img
-                      src="../img/svg-export/service-icon-black-3.png"
+                      src="../img/svg-export/service-icon-black-3.svg"
                       alt=""
                       width="70"
                       height="70"
                     />
                     <img
-                      src="../img/svg-export/service-icon-orange-3.png"
+                      src="../img/svg-export/service-icon-orange-3.svg"
                       alt=""
                       width="70"
                       height="70"
@@ -213,13 +468,13 @@
                     class="relative w-[30px] h-[30px] inline-block duration-300"
                   >
                     <img
-                      src="../img/svg-export/arrow-right-black.png"
+                      src="../img/svg-export/arrow-right-black.svg"
                       alt=""
                       width="30"
                       height="30"
                     />
                     <img
-                      src="../img/svg-export/arrow-right-black-1.png"
+                      src="../img/svg-export/arrow-right-black-1.svg"
                       class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
                       width="30"
                       height="30"
@@ -232,13 +487,13 @@
                 <li class="group bg-white p-[30px] duration-300 hover:bg-black">
                   <div class="relative mb-9 h-[70px] w-[70px]">
                     <img
-                      src="../img/svg-export/service-icon-black-4.png"
+                      src="../img/svg-export/service-icon-black-4.svg"
                       alt=""
                       width="70"
                       height="70"
                     />
                     <img
-                      src="../img/svg-export/service-icon-orange-4.png"
+                      src="../img/svg-export/service-icon-orange-4.svg"
                       alt=""
                       width="70"
                       height="70"
@@ -263,13 +518,13 @@
                     class="relative w-[30px] h-[30px] inline-block duration-300"
                   >
                     <img
-                      src="../img/svg-export/arrow-right-black.png"
+                      src="../img/svg-export/arrow-right-black.svg"
                       alt=""
                       width="30"
                       height="30"
                     />
                     <img
-                      src="../img/svg-export/arrow-right-black-1.png"
+                      src="../img/svg-export/arrow-right-black-1.svg"
                       class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
                       width="30"
                       height="30"
@@ -313,13 +568,13 @@
                     class="relative w-[30px] h-[30px] inline-block duration-300"
                   >
                     <img
-                      src="../img/svg-export/arrow-right-black.png"
+                      src="../img/svg-export/arrow-right-black.svg"
                       alt=""
                       width="30"
                       height="30"
                     />
                     <img
-                      src="../img/svg-export/arrow-right-black-1.png"
+                      src="../img/svg-export/arrow-right-black-1.svg"
                       class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
                       width="30"
                       height="30"
@@ -363,13 +618,13 @@
                     class="relative w-[30px] h-[30px] inline-block duration-300"
                   >
                     <img
-                      src="../img/svg-export/arrow-right-black.png"
+                      src="../img/svg-export/arrow-right-black.svg"
                       alt=""
                       width="30"
                       height="30"
                     />
                     <img
-                      src="../img/svg-export/arrow-right-black-1.png"
+                      src="../img/svg-export/arrow-right-black-1.svg"
                       class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
                       width="30"
                       height="30"
@@ -413,13 +668,13 @@
                     class="relative w-[30px] h-[30px] inline-block duration-300"
                   >
                     <img
-                      src="../img/svg-export/arrow-right-black.png"
+                      src="../img/svg-export/arrow-right-black.svg"
                       alt=""
                       width="30"
                       height="30"
                     />
                     <img
-                      src="../img/svg-export/arrow-right-black-1.png"
+                      src="../img/svg-export/arrow-right-black-1.svg"
                       class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
                       width="30"
                       height="30"
@@ -463,13 +718,13 @@
                     class="relative w-[30px] h-[30px] inline-block duration-300"
                   >
                     <img
-                      src="../img/svg-export/arrow-right-black.png"
+                      src="../img/svg-export/arrow-right-black.svg"
                       alt=""
                       width="30"
                       height="30"
                     />
                     <img
-                      src="../img/svg-export/arrow-right-black-1.png"
+                      src="../img/svg-export/arrow-right-black-1.svg"
                       class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
                       width="30"
                       height="30"
@@ -513,9 +768,13 @@
                       industries.
                     </p>
                     <button
-                      class="rounded-[50px] mt-5 border-black text-white bg-black py-4 px-6 hover:bg-[#fe330a] hover:transform-[translate-y-5] duration-300"
+                      class="relative group border-2 rounded-[50px] mt-5 text-white overflow-hidden py-4 px-6 after:absolute after:left-0 after:top-0 after:z-[-2] after:bg-black after:border-black after:w-full after:h-full"
                     >
-                      Ask you questions
+                      <div
+                        class="before:content-[''] before:absolute before:top-[-100%] before:left-0 before:w-full before:h-full before:z-[-1] before:bg-[#fe330a] before:transition-all before:duration-500 before:transform group-hover:before:translate-y-full"
+                      >
+                        Ask you questions
+                      </div>
                     </button>
                     <!-- sub title end -->
                   </div>
@@ -528,41 +787,36 @@
                   <!-- FAQ list -->
                   <div
                     id="accordion-flush"
-                    class=""
+                    class="accordion"
                     data-accordion="collapse"
                     data-active-classes="bg-white text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
                     data-inactive-classes="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
                   >
-                    <div id="accordion-flush-heading-1" class="">
-                      <button
-                        id="myButton"
-                        type="button"
-                        class="button flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                    <div class="accordion-item active">
+                      <div
+                        class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                        id="accordion-flush-heading-1"
                         data-accordion-target="#accordion-flush-body-1"
                         aria-expanded="true"
                         aria-controls="accordion-flush-body-1"
                       >
-                        <span
+                        <p
                           class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                          >How do I start AI SaaS?
-                        </span>
-                        <img
-                          src="../img/svg-export/plus.png"
-                          data-accordion-icon
-                          class="rotate-45px shrink-0"
-                          aria-hidden="true"
-                          fill="none"
-                          viewBox="0 0 10 6"
-                          alt=""
-                        />
-                      </button>
-                    </div>
-                    <div
-                      id="accordion-flush-body-1"
-                      class="hidden"
-                      aria-labelledby="accordion-flush-heading-1"
-                    >
-                      <div class="border-b border-gray-200">
+                        >
+                          How do I start AI SaaS?
+                        </p>
+                        <div class="accordion-icon">
+                          <img
+                            src="https://azzle.netlify.app/assets/img/plus.svg"
+                            alt="plus"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="accordion-content text-[#2C2C2C] hidden"
+                        id="accordion-flush-body-1"
+                        aria-labelledby="accordion-flush-heading-1"
+                      >
                         <p class="text-[#2c2c2c] py-5 text-xl">
                           Go to the our official website and require users to
                           create an account. You'll need to provide some basic
@@ -570,72 +824,63 @@
                         </p>
                       </div>
                     </div>
-                    <div id="accordion-flush-heading-2">
-                      <button
-                        type="button"
-                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                    <div class="accordion-item active">
+                      <div
+                        class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                        id="accordion-flush-heading-2"
                         data-accordion-target="#accordion-flush-body-2"
-                        aria-expanded="false"
+                        aria-expanded="true"
                         aria-controls="accordion-flush-body-2"
                       >
-                        <span
+                        <p
                           class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                          >Can I customize AI SaaS solutions?
-                        </span>
-
-                        <img
-                          src="../img/svg-export/plus.png"
-                          data-accordion-icon
-                          class="rotate-45px shrink-0"
-                          aria-hidden="true"
-                          fill="none"
-                          viewBox="0 0 10 6"
-                          alt=""
-                        />
-                      </button>
-                    </div>
-                    <div
-                      id="accordion-flush-body-2"
-                      class="hidden"
-                      aria-labelledby="accordion-flush-heading-2"
-                    >
-                      <div class="py-5 border-b border-gray-200">
-                        <p class="text-[#2c2c2c] text-xl">
+                        >
+                          Can I customize AI SaaS solutions?
+                        </p>
+                        <div class="accordion-icon">
+                          <img
+                            src="https://azzle.netlify.app/assets/img/plus.svg"
+                            alt="plus"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="accordion-content text-[#2C2C2C] hidden"
+                        id="accordion-flush-body-2"
+                        aria-labelledby="accordion-flush-heading-2"
+                      >
+                        <p class="text-[#2c2c2c] py-5 text-xl">
                           Go to the our official website and require users to
                           create an account. You'll need to provide some basic
                           information and agree to our terms and conditions.
                         </p>
                       </div>
                     </div>
-                    <div id="accordion-flush-heading-3">
-                      <button
-                        type="button"
-                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                    <div class="accordion-item active">
+                      <div
+                        class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                        id="accordion-flush-heading-3"
                         data-accordion-target="#accordion-flush-body-3"
-                        aria-expanded="false"
+                        aria-expanded="true"
                         aria-controls="accordion-flush-body-3"
                       >
-                        <span
+                        <p
                           class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                          >How can AI benefit my business?
-                        </span>
-                        <img
-                          src="../img/svg-export/plus.png"
-                          data-accordion-icon
-                          class="rotate-45px shrink-0"
-                          aria-hidden="true"
-                          fill="none"
-                          viewBox="0 0 10 6"
-                          alt=""
-                        />
-                      </button>
-                    </div>
-                    <div
-                      id="accordion-flush-body-3"
-                      class="hidden"
-                      aria-labelledby="accordion-flush-heading-3"
-                    >
-                      <div class="">
+                        >
+                          How can AI benefit my business?
+                        </p>
+                        <div class="accordion-icon">
+                          <img
+                            src="https://azzle.netlify.app/assets/img/plus.svg"
+                            alt="plus"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="accordion-content text-[#2C2C2C] hidden"
+                        id="accordion-flush-body-3"
+                        aria-labelledby="accordion-flush-heading-3"
+                      >
                         <p class="text-[#2c2c2c] py-5 text-xl">
                           Go to the our official website and require users to
                           create an account. You'll need to provide some basic
@@ -644,6 +889,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- mẫu -->
                   <!-- right end -->
                 </div>
               </div>
@@ -655,6 +901,219 @@
         <!-- FAQ end -->
       </main>
     </div>
+    <!-- footer  -->
+    <section
+      class="relative z-[1] -mt-[70px] bg_banner overflow-hidden rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[50px] lg:rounded-tr-[50px]"
+    >
+      <footer>
+        <div class="py-[50px] xl:pb-[100px] xl:pt-[130px]">
+          <div class="overflow-hidden">
+            <!-- Footer Text Slider -->
+            <div class="footer-text-slider">
+              <div class="flex items-center">
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="global-container">
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- Footer Center -->
+          <div
+            class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px] mx-3"
+          >
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-8 w-full xl:px-18">
+              <a class="inline-block" href="/"
+                ><img
+                  src="../img/logo-dark.png"
+                  alt="logo"
+                  width="96"
+                  height="24"
+              /></a>
+              <p>
+                Our mission is to harness the power of AI to solve complex
+                business challenges &amp; decision-makers with data-driven
+                insights, and enhance user experiences across digital platforms.
+              </p>
+              <p>
+                Website: <a href="https://www.example.com">www.example.com</a>
+              </p>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Primary Pages
+              </h4>
+              <!-- Footer Title -->
+
+              <!-- Footer Navbar -->
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/about"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/services"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/pricing"
+                    >pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Utility pages
+              </h4>
+              <!-- Footer Title -->
+
+              <!-- Footer Navbar -->
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/signup"
+                    >Signup</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/login"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/error-404"
+                    >404 Not found</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/reset-password"
+                    >Password Reset</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Subscribe to our newsletter
+              </h4>
+              <!-- Footer Title -->
+              <!-- Footer Subscriber Form -->
+              <form action="#" method="post" class="">
+                <div class="relative h-[50px] max-w-[300px]">
+                  <input
+                    type="email"
+                    name="newsletter-email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
+                    required=""
+                  />
+                  <button
+                    type="submit"
+                    class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500"
+                  >
+                    <img
+                      src="../img/svg-export/newsletter.svg"
+                      alt="newsletter"
+                    />
+                  </button>
+                </div>
+              </form>
+              <!-- Footer Subscriber Form -->
+            </div>
+            <!-- Footer Widget -->
+          </div>
+          <!-- Footer Center -->
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- Footer Bottom -->
+          <div class="py-9 text-center">
+            <p>© Copyright 2023, All Rights Reserved by Mthemeus</p>
+          </div>
+          <!-- Footer Bottom -->
+        </div>
+      </footer>
+    </section>
     <!-- wow js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
@@ -667,5 +1126,7 @@
     </script>
     <!-- flow bite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- main js -->
+    <script src="./main.js"></script>
   </body>
 </html>
