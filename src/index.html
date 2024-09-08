@@ -45,8 +45,11 @@
 
     <link href="./css/output.css" rel="stylesheet" />
     <!-- css -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="./css/css/style.css" />
 
+=======
+>>>>>>> c962fe16ca2401db81667b05180c389563109bfc
     <link rel="stylesheet" href="./css/input.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Home</title>
@@ -853,16 +856,16 @@
           class="mx-auto max-w-[1500px] px-5 pb-[150px] animate__animated animate__fadeInUp wow animate__delay-1s"
         >
           <div
-            class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black w-full h-[700px] lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]"
+            class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]"
           >
             <!-- left -->
-            <div class="relative lg:round-[50px]">
+            <div class="relative rounded-[30px] lg:round-[50px]">
               <img
                 src="../img/funfact-image.jpg"
                 alt=""
                 width="720"
                 height="785"
-                class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full"
+                class="h-80 w-full object-cover object-center sm:h-auto lg:h-[35rem] xl:h-full"
               />
               <!-- play button -->
               <a
@@ -933,7 +936,8 @@
         <!-- streamline end -->
       </section>
       <section class="cost"></section>
-      <section class="information" id="faq">
+
+      <section id="faq">
         <!-- spacer -->
         <div class="pb-20 xl:pb-[150px]">
           <!-- container -->
@@ -959,9 +963,13 @@
                     industries.
                   </p>
                   <button
-                    class="rounded-[50px] mt-5 border-black text-white bg-black py-4 px-6 hover:bg-[#fe330a] hover:transform-[translate-y-5] duration-300"
+                    class="relative group border-2 rounded-[50px] mt-5 text-white overflow-hidden py-4 px-6 after:absolute after:left-0 after:top-0 after:z-[-2] after:bg-black after:border-black after:w-full after:h-full"
                   >
-                    Ask you questions
+                    <div
+                      class="before:content-[''] before:absolute before:top-[-100%] before:left-0 before:w-full before:h-full before:z-[-1] before:bg-[#fe330a] before:transition-all before:duration-500 before:transform group-hover:before:translate-y-full"
+                    >
+                      Ask you questions
+                    </div>
                   </button>
                   <!-- sub title end -->
                 </div>
@@ -974,41 +982,36 @@
                 <!-- FAQ list -->
                 <div
                   id="accordion-flush"
-                  class=""
+                  class="accordion"
                   data-accordion="collapse"
                   data-active-classes="bg-white text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
                   data-inactive-classes="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
                 >
-                  <div id="accordion-flush-heading-1" class="">
-                    <button
-                      id="myButton"
-                      type="button"
-                      class="button flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                  <div class="accordion-item active">
+                    <div
+                      class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                      id="accordion-flush-heading-1"
                       data-accordion-target="#accordion-flush-body-1"
                       aria-expanded="true"
                       aria-controls="accordion-flush-body-1"
                     >
-                      <span
+                      <p
                         class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                        >How do I start AI SaaS?
-                      </span>
-                      <img
-                        src="../img/svg-export/plus.png"
-                        data-accordion-icon
-                        class="rotate-45px shrink-0"
-                        aria-hidden="true"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                  <div
-                    id="accordion-flush-body-1"
-                    class="hidden"
-                    aria-labelledby="accordion-flush-heading-1"
-                  >
-                    <div class="border-b border-gray-200">
+                      >
+                        How do I start AI SaaS?
+                      </p>
+                      <div class="accordion-icon">
+                        <img
+                          src="https://azzle.netlify.app/assets/img/plus.svg"
+                          alt="plus"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="accordion-content text-[#2C2C2C] hidden"
+                      id="accordion-flush-body-1"
+                      aria-labelledby="accordion-flush-heading-1"
+                    >
                       <p class="text-[#2c2c2c] py-5 text-xl">
                         Go to the our official website and require users to
                         create an account. You'll need to provide some basic
@@ -1016,72 +1019,63 @@
                       </p>
                     </div>
                   </div>
-                  <div id="accordion-flush-heading-2">
-                    <button
-                      type="button"
-                      class="flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                  <div class="accordion-item active">
+                    <div
+                      class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                      id="accordion-flush-heading-2"
                       data-accordion-target="#accordion-flush-body-2"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="accordion-flush-body-2"
                     >
-                      <span
+                      <p
                         class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                        >Can I customize AI SaaS solutions?
-                      </span>
-
-                      <img
-                        src="../img/svg-export/plus.png"
-                        data-accordion-icon
-                        class="rotate-45px shrink-0"
-                        aria-hidden="true"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                  <div
-                    id="accordion-flush-body-2"
-                    class="hidden"
-                    aria-labelledby="accordion-flush-heading-2"
-                  >
-                    <div class="py-5 border-b border-gray-200">
-                      <p class="text-[#2c2c2c] text-xl">
+                      >
+                        Can I customize AI SaaS solutions?
+                      </p>
+                      <div class="accordion-icon">
+                        <img
+                          src="https://azzle.netlify.app/assets/img/plus.svg"
+                          alt="plus"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="accordion-content text-[#2C2C2C] hidden"
+                      id="accordion-flush-body-2"
+                      aria-labelledby="accordion-flush-heading-2"
+                    >
+                      <p class="text-[#2c2c2c] py-5 text-xl">
                         Go to the our official website and require users to
                         create an account. You'll need to provide some basic
                         information and agree to our terms and conditions.
                       </p>
                     </div>
                   </div>
-                  <div id="accordion-flush-heading-3">
-                    <button
-                      type="button"
-                      class="flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                  <div class="accordion-item active">
+                    <div
+                      class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                      id="accordion-flush-heading-3"
                       data-accordion-target="#accordion-flush-body-3"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="accordion-flush-body-3"
                     >
-                      <span
+                      <p
                         class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
-                        >How can AI benefit my business?
-                      </span>
-                      <img
-                        src="../img/svg-export/plus.png"
-                        data-accordion-icon
-                        class="rotate-45px shrink-0"
-                        aria-hidden="true"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                  <div
-                    id="accordion-flush-body-3"
-                    class="hidden"
-                    aria-labelledby="accordion-flush-heading-3"
-                  >
-                    <div class="">
+                      >
+                        How can AI benefit my business?
+                      </p>
+                      <div class="accordion-icon">
+                        <img
+                          src="https://azzle.netlify.app/assets/img/plus.svg"
+                          alt="plus"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="accordion-content text-[#2C2C2C] hidden"
+                      id="accordion-flush-body-3"
+                      aria-labelledby="accordion-flush-heading-3"
+                    >
                       <p class="text-[#2c2c2c] py-5 text-xl">
                         Go to the our official website and require users to
                         create an account. You'll need to provide some basic
@@ -1090,6 +1084,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- mẫu -->
                 <!-- right end -->
               </div>
             </div>
@@ -1263,5 +1258,40 @@
         },
       });
     </script>
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- countup -->
+    <script src="../countup_js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 1700,
+      });
+    </script>
+    <!-- fslightbox -->
+    <script src="./js/fs_lightbox/fslightbox.js"></script>
+    <!-- wow js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- main js -->
+    <script src="./main.js"></script>
   </body>
 </html>
