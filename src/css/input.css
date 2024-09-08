@@ -134,7 +134,7 @@ header .right_button::before {
   /* padding: 10px 25px; */
   position: relative;
   z-index: 1;
-  display: inline-block;
+  /* display: inline-block; */
   overflow: hidden;
 }
 .button:after {
