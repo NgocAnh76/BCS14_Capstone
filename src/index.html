@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- slick css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link font DM_Sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
   <!-- slick css  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
@@ -450,14 +490,372 @@
         <!-- spacer end -->
       </div>
 
-      <a href="./services.html"></a>
-    </section>
+      <section id="service">
+        <!-- spacer -->
+        <div class="py-20">
+          <!-- container -->
+          <div class="container px-5">
+            <!-- content -->
+            <div class="mb-10 lg:mb-16 xl:mb-20">
+              <div class="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
+                <h2 class="animate__animated animate__fadeInUp wow w-100%">
+                  Core features that make it valuable
+                </h2>
+              </div>
+            </div>
+            <!-- content end -->
 
-    <section class="access" id="content_1">
-      <!-- spacer -->
-      <div class="pb-20 xl:pb-[150px]">
-        <!-- container -->
-        <div class="container">
+            <!-- service list -->
+            <ul
+              class="animate__animated animate__fadeInUp wow animate__delay-1s grid grid-cols-1 gap-[2px] rounded-[10px] border-2 overflow-hidden border-black bg-black sm:grid-cols-2 lg:grid-cols-4"
+            >
+              <!-- service item 1 -->
+              <li class="group bg-white p-[30px] duration-300 hover:bg-black">
+                <div class="relative mb-9 h-[70px] w-[70px]">
+                  <img
+                    src="../img/svg-export/svgexport-1.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                  />
+                  <img
+                    src="../img/svg-export/service-icon-orange-1.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="ease-linear absolute left-0 top-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  />
+                </div>
+                <h3
+                  class="block group-hover:text-white leading-tight -tracking-[0.5px] mb-4 xl:text-2xl xxl:text-[28px] text-xl"
+                >
+                  <a
+                    href="service_details.html"
+                    class="hover:text-[#fe330a] duration-300"
+                    >Resource Flexibility</a
+                  >
+                </h3>
+                <p class="group-hover:text-white mb-12 duration-300">
+                  This is an excellent option for people & small businesses who
+                  are starting out.
+                </p>
+                <a
+                  href="./service_details.html"
+                  class="relative w-[30px] h-[30px] inline-block duration-300"
+                >
+                  <img
+                    src="../img/svg-export/arrow-right-black.png"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  <img
+                    src="../img/svg-export/arrow-right-black-1.png"
+                    class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    width="30"
+                    height="30"
+                    alt=""
+                  />
+                </a>
+              </li>
+
+              <!-- service item 2 -->
+              <li class="group bg-white p-[30px] duration-300 hover:bg-black">
+                <div class="relative mb-9 h-[70px] w-[70px]">
+                  <img
+                    src="../img/svg-export/service-icon-black-2.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                  />
+                  <img
+                    src="../img/svg-export/service-icon-orange-1-1.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="ease-linear absolute left-0 top-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  />
+                </div>
+                <h3
+                  class="block group-hover:text-white leading-tight -tracking-[0.5px] mb-4 xl:text-2xl xxl:text-[28px] text-xl"
+                >
+                  <a
+                    href="service_details.html"
+                    class="hover:text-[#fe330a] duration-300"
+                    >Managed Services</a
+                  >
+                </h3>
+                <p class="group-hover:text-white mb-12 duration-300">
+                  This is an excellent option for people & small businesses who
+                  are starting out.
+                </p>
+                <a
+                  href="./service_details.html"
+                  class="relative w-[30px] h-[30px] inline-block duration-300"
+                >
+                  <img
+                    src="../img/svg-export/arrow-right-black.png"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  <img
+                    src="../img/svg-export/arrow-right-black-1.png"
+                    class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    width="30"
+                    height="30"
+                    alt=""
+                  />
+                </a>
+              </li>
+
+              <!-- service item 3 -->
+              <li class="group bg-white p-[30px] duration-300 hover:bg-black">
+                <div class="relative mb-9 h-[70px] w-[70px]">
+                  <img
+                    src="../img/svg-export/service-icon-black-3.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                  />
+                  <img
+                    src="../img/svg-export/service-icon-orange-3.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="ease-linear absolute left-0 top-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  />
+                </div>
+                <h3
+                  class="block group-hover:text-white leading-tight -tracking-[0.5px] mb-4 xl:text-2xl xxl:text-[28px] text-xl"
+                >
+                  <a
+                    href="service_details.html"
+                    class="hover:text-[#fe330a] duration-300"
+                    >Web-Based Access</a
+                  >
+                </h3>
+                <p class="group-hover:text-white mb-12 duration-300">
+                  This is an excellent option for people & small businesses who
+                  are starting out.
+                </p>
+                <a
+                  href="./service_details.html"
+                  class="relative w-[30px] h-[30px] inline-block duration-300"
+                >
+                  <img
+                    src="../img/svg-export/arrow-right-black.png"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  <img
+                    src="../img/svg-export/arrow-right-black-1.png"
+                    class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    width="30"
+                    height="30"
+                    alt=""
+                  />
+                </a>
+              </li>
+
+              <!-- service item 4 -->
+              <li class="group bg-white p-[30px] duration-300 hover:bg-black">
+                <div class="relative mb-9 h-[70px] w-[70px]">
+                  <img
+                    src="../img/svg-export/service-icon-black-4.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                  />
+                  <img
+                    src="../img/svg-export/service-icon-orange-4.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="ease-linear absolute left-0 top-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  />
+                </div>
+                <h3
+                  class="block group-hover:text-white leading-tight -tracking-[0.5px] mb-4 xl:text-2xl xxl:text-[28px] text-xl"
+                >
+                  <a
+                    href="service_details.html"
+                    class="hover:text-[#fe330a] duration-300"
+                    >Resource Flexibility</a
+                  >
+                </h3>
+                <p class="group-hover:text-white mb-12 duration-300">
+                  This is an excellent option for people & small businesses who
+                  are starting out.
+                </p>
+                <a
+                  href="./service_details.html"
+                  class="relative w-[30px] h-[30px] inline-block duration-300"
+                >
+                  <img
+                    src="../img/svg-export/arrow-right-black.png"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  <img
+                    src="../img/svg-export/arrow-right-black-1.png"
+                    class="absolute ease-linear top-0 left-0 h-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    width="30"
+                    height="30"
+                    alt=""
+                  />
+                </a>
+              </li>
+
+              <!-- service list end -->
+            </ul>
+            <!-- container end -->
+          </div>
+          <!-- spacer end -->
+        </div>
+
+        <a href="./services.html"></a>
+      </section>
+
+      <section class="access" id="content_1">
+        <!-- spacer -->
+        <div class="pb-20 xl:pb-[150px]">
+          <!-- container -->
+          <div class="container px-5">
+            <div
+              class="overflow-hidden grid grid-cols-1 gap-12 items-center md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32"
+            >
+              <!-- content left -->
+              <div
+                class="order-2 overflow-hidden rounded-md md:order-1 animate__animated animate__fadeInRight wow animate__delay-1s"
+              >
+                <img
+                  src="../img/content-image-1.jpg"
+                  alt=""
+                  width="520"
+                  height="450"
+                  class="w-full h-full object-cover"
+                />
+                <!-- left end -->
+              </div>
+              <!-- content right -->
+              <div
+                class="order-1 md:order-2 animate__animated animate__fadeInLeft wow overflow-hidden animate__delay-1s"
+              >
+                <!-- title -->
+                <div class="mb-6">
+                  <h2>Accessible to a wider audience</h2>
+                </div>
+                <!-- sub title -->
+                <div class="text-xl leading-[1.4] lg:text-[21px]">
+                  <p class="mb-7 last:mb-0">
+                    Advanced AI capabilities accessible to a broader audience,
+                    including small & medium-sized businesses and individuals
+                    who may not have the resources or expertise to develop.
+                  </p>
+                </div>
+                <!-- right end -->
+              </div>
+            </div>
+            <!-- container end -->
+          </div>
+          <!-- section spacer end -->
+        </div>
+        <!-- content section end -->
+      </section>
+
+      <section class="solution" id="content_2">
+        <!-- spacer -->
+        <div class="pb-20 xl:pb-[150px]">
+          <!-- container -->
+          <div class="container px-5">
+            <div
+              class="grid grid-cols-1 gap-12 items-center md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,1.2fr)_1fr] xl:gap-28 xxl:gap-32"
+            >
+              <!-- content left -->
+              <div
+                class="order-2 overflow-hidden animate__animated animate__fadeInLeft wow animate__delay-1s"
+              >
+                <!-- title -->
+                <div class="mb-6">
+                  <h2>Providing quick deploy solutions</h2>
+                </div>
+                <!-- sub title -->
+                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                  <p class="mb-7 last:mb-0">
+                    Our AI SaaS solutions can be quickly deployed, enabling
+                    users to start benefiting from AI capabilities without
+                    lengthy setup and development times in fast-paced
+                    industries.
+                  </p>
+                  <ul
+                    class="flex flex-col gap-y-5 tetx-xl lg:mt-12 lg:text-[28px] leading-tight tracking-tighter font-semibold"
+                  >
+                    <li class="flex items-start gap-x-3">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img
+                          src="../img/svg-export/check-circle.png"
+                          alt=""
+                          width="30"
+                          height="30"
+                          class="w-full h-full"
+                        />
+                      </div>
+                      Ready-to-use AI capabilities system
+                    </li>
+                    <li class="flex items-start gap-x-3">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img
+                          src="../img/svg-export/check-circle.png"
+                          alt=""
+                          width="30"
+                          height="30"
+                          class="w-full h-full"
+                        />
+                      </div>
+                      Users can quickly integrate AI features
+                    </li>
+                    <li class="flex items-start gap-x-3">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img
+                          src="../img/svg-export/check-circle.png"
+                          alt=""
+                          width="30"
+                          height="30"
+                          class="w-full h-full"
+                        />
+                      </div>
+                      Time savings translate to cost savings
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- content right -->
+              <div
+                class="order-1 md:order-2 rounded-md animate__animated animate__fadeInRight wow animate__delay-1s"
+              >
+                <img
+                  src="../img/content-image-2.jpg"
+                  width="526"
+                  height="450"
+                  class="h-auto w-full"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- container end -->
+          </div>
+
+          <!-- spacer end -->
+        </div>
+      </section>
+      <section id="streamline">
+        <div
+          class="mx-auto max-w-[1500px] px-5 pb-[150px] animate__animated animate__fadeInUp wow animate__delay-1s"
+        >
           <div
             class="overflow-hidden grid grid-cols-1 gap-12 items-center md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
             <!-- content left -->
@@ -491,9 +889,704 @@
           </div>
           <!-- container end -->
         </div>
-        <!-- section spacer end -->
+        <!-- streamline end -->
+      </section>
+      <!-- cost -->
+    <section class="pricing-section">
+      <div class="py-20">
+        <!-- Section Container -->
+        <div class="global-container">
+          <div class="mb-10 text-center lg:mb-12 jos" data-jos_once="1" data-jos_animation="fade-up"
+            data-jos_counter="1" data-jos_scrolldirection="down">
+            <div class="mx-auto md:max-w-xs lg:max-w-3xl text-4xl lg:text-6xl xl:text-[80px] font-bold">
+              <h2>Cost-effectively build any software</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="flex justify-center">
+              <div
+                class="inline-flex items-center justify-center space-x-4 bg-white border-2 border-black rounded-full">
+                <!-- Monthly Button -->
+                <button
+                  class="px-10 py-4 bg-black text-white text-lg font-bold rounded-full focus:outline-none transition"
+                  id="btnM">
+                  Monthly
+                </button>
+                <!-- Annually Button -->
+                <button class="px-10 py-4 text-black text-lg font-bold rounded-full focus:outline-none transition"
+                  id="btnA">
+                  Annually
+                </button>
+              </div>
+            </div>
+            <div class="mt-12 lg:mt-16 xl:mt-20">
+              <!-- Price List -->
+              <ul id="monthly" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Price Item 1 -->
+                <li class="group flex flex-col jos" data-jos_animation="flip" data-jos_delay="0" data-jos_once="1"
+                  data-jos_counter="1" data-jos_scrolldirection="down">
+                  <div
+                    class="flip-card-inner bg_cost p-10 rounded-[10px] transition-all duration-300 ease-linear hover:bg-black">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Beginner
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 10 members</span>
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $25<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      This is an excellent option for people & small businesses who are starting out.
+                    </p>
+                    <a class="button mt-auto block font-black rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:border-red-500 hover:text-black group-hover:border-red-500 group-hover:text-white hover-bg-gradient"
+                      href="/pricing">Choose the plan</a>
+                  </div>
+                </li>
+
+                <!-- Price Item 2 -->
+                <li class="group flex flex-col jos" data-jos_animation="flip" data-jos_delay="0" data-jos_once="1"
+                  data-jos_counter="1" data-jos_scrolldirection="down">
+                  <div
+                    class="flip-card-inner rounded-[10px] bg_cost p-10 hover:bg-black transition-all duration-300 ease-linear">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Starter
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 50 members</span>
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $89<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      This plan is suitable for e-commerce stores as well as professional blogs.
+                    </p>
+                    <a class="button mt-auto block font-black rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:border-red-500 hover:text-black group-hover:border-red-500 group-hover:text-white hover-bg-gradient"
+                      href="/pricing">Choose the plan</a>
+                  </div>
+                </li>
+
+                <!-- Price Item 3 -->
+                <li class="group flex flex-col jos" data-jos_animation="flip" data-jos_delay="0" data-jos_once="1"
+                  data-jos_counter="1" data-jos_scrolldirection="down">
+                  <div
+                    class="flip-card-inner rounded-[10px] bg_cost p-10 hover:bg-black transition-all duration-300 ease-linear">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Pro
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 100 members</span>
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $199<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Ideal for handling complicated projects enterprise-level projects, and websites.
+                    </p>
+                    <a class="button mt-auto block font-black rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:border-red-500 hover:text-black group-hover:border-red-500 group-hover:text-white hover-bg-gradient"
+                      href="/pricing">Choose the plan</a>
+                  </div>
+                </li>
+              </ul>
+
+              <ul id="annually" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 hidden">
+                <!-- Price Item 1 -->
+                <li class="group flex flex-col jos" data-jos_animation="flip" data-jos_delay="0" data-jos_once="1"
+                  data-jos_counter="1" data-jos_scrolldirection="down">
+                  <div
+                    class="flip-card-inner bg_cost rounded-[10px] p-10 hover:bg-black transition-all duration-300 ease-linear">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Beginner
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 10 members</span>
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $240<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      This is an excellent option for people & small businesses who are starting out.
+                    </p>
+                    <a class="button mt-auto block font-black rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:border-red-500 hover:text-black group-hover:border-red-500 group-hover:text-white hover-bg-gradient"
+                      href="/pricing">Choose the plan</a>
+                  </div>
+                </li>
+
+                <!-- Price Item 2 -->
+                <li class="group flex flex-col jos" data-jos_animation="flip" data-jos_delay="0" data-jos_once="1"
+                  data-jos_counter="1" data-jos_scrolldirection="down">
+                  <div
+                    class="flip-card-inner bg_cost rounded-[10px] p-10 hover:bg-black transition-all duration-300 ease-linear">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Starter
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 50 members</span>
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $960<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      This plan is suitable for e-commerce stores as well as professional blogs.
+                    </p>
+                    <a class="button mt-auto block font-black rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:border-red-500 hover:text-black group-hover:border-red-500 group-hover:text-white hover-bg-gradient"
+                      href="/pricing">Choose the plan</a>
+                  </div>
+                </li>
+
+                <!-- Price Item 3 -->
+                <li class="group flex flex-col jos" data-jos_animation="flip" data-jos_delay="0" data-jos_once="1"
+                  data-jos_counter="1" data-jos_scrolldirection="down">
+                  <div
+                    class="flip-card-inner bg_cost rounded-[10px] p-10 hover:bg-black transition-all duration-300 ease-linear">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Pro
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 100 members</span>
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $1900<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Ideal for handling complicated projects enterprise-level projects, and websites.
+                    </p>
+                    <a class="button mt-auto block font-black rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:border-red-500 hover:text-black group-hover:border-red-500 group-hover:text-white hover-bg-gradient"
+                      href="/pricing">Choose the plan</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <!-- Section Container -->
       </div>
-      <!-- content section end -->
+    </section>
+
+      <section id="faq">
+        <!-- spacer -->
+        <div class="pb-20 xl:pb-[150px]">
+          <!-- container -->
+          <div class="container px-5">
+            <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+              <!-- left -->
+              <div
+                class="flex flex-col animate__animated animate__fadeInLeft wow animate__delay-1s"
+              >
+                <!-- left title -->
+                <div class="mb-6">
+                  <div class="mx-auto md:mx-0 md:max-w-none">
+                    <h2>Freely ask us for more information</h2>
+                  </div>
+                  <!-- title end -->
+                </div>
+                <!-- left sub title -->
+                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                  <p class="mb-7 last:mb-0">
+                    Our AI SaaS solutions can be quickly deployed, enabling
+                    users to start benefiting from AI capabilities without
+                    lengthy setup and development times in fast-paced
+                    industries.
+                  </p>
+                  <button
+                    class="relative group border-2 rounded-[50px] mt-5 text-white overflow-hidden py-4 px-6 after:absolute after:left-0 after:top-0 after:z-[-2] after:bg-black after:border-black after:w-full after:h-full"
+                  >
+                    <div
+                      class="before:content-[''] before:absolute before:top-[-100%] before:left-0 before:w-full before:h-full before:z-[-1] before:bg-[#fe330a] before:transition-all before:duration-500 before:transform group-hover:before:translate-y-full"
+                    >
+                      Ask you questions
+                    </div>
+                  </button>
+                  <!-- sub title end -->
+                </div>
+                <!-- left end -->
+              </div>
+              <!-- right -->
+              <div
+                class="md:ml-10 lg:ml-20 xl:ml-32 animate__animated animate__fadeInRight wow animate__delay-1s"
+              >
+                <!-- FAQ list -->
+                <div
+                  id="accordion-flush"
+                  class="accordion"
+                  data-accordion="collapse"
+                  data-active-classes="bg-white text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                  data-inactive-classes="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                >
+                  <div class="accordion-item active">
+                    <div
+                      class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                      id="accordion-flush-heading-1"
+                      data-accordion-target="#accordion-flush-body-1"
+                      aria-expanded="true"
+                      aria-controls="accordion-flush-body-1"
+                    >
+                      <p
+                        class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                      >
+                        How do I start AI SaaS?
+                      </p>
+                      <div class="accordion-icon">
+                        <img
+                          src="https://azzle.netlify.app/assets/img/plus.svg"
+                          alt="plus"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="accordion-content text-[#2C2C2C] hidden"
+                      id="accordion-flush-body-1"
+                      aria-labelledby="accordion-flush-heading-1"
+                    >
+                      <p class="text-[#2c2c2c] py-5 text-xl">
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item active">
+                    <div
+                      class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                      id="accordion-flush-heading-2"
+                      data-accordion-target="#accordion-flush-body-2"
+                      aria-expanded="true"
+                      aria-controls="accordion-flush-body-2"
+                    >
+                      <p
+                        class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                      >
+                        Can I customize AI SaaS solutions?
+                      </p>
+                      <div class="accordion-icon">
+                        <img
+                          src="https://azzle.netlify.app/assets/img/plus.svg"
+                          alt="plus"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="accordion-content text-[#2C2C2C] hidden"
+                      id="accordion-flush-body-2"
+                      aria-labelledby="accordion-flush-heading-2"
+                    >
+                      <p class="text-[#2c2c2c] py-5 text-xl">
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item active">
+                    <div
+                      class="accordion-header flex items-center justify-between w-full py-5 font-medium rtl:text-right border-b gap-3"
+                      id="accordion-flush-heading-3"
+                      data-accordion-target="#accordion-flush-body-3"
+                      aria-expanded="true"
+                      aria-controls="accordion-flush-body-3"
+                    >
+                      <p
+                        class="text-xl font-bold lg:text-[28px] leading-[1.2] -tracking-[0.5px]"
+                      >
+                        How can AI benefit my business?
+                      </p>
+                      <div class="accordion-icon">
+                        <img
+                          src="https://azzle.netlify.app/assets/img/plus.svg"
+                          alt="plus"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="accordion-content text-[#2C2C2C] hidden"
+                      id="accordion-flush-body-3"
+                      aria-labelledby="accordion-flush-heading-3"
+                    >
+                      <p class="text-[#2c2c2c] py-5 text-xl">
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- mẫu -->
+                <!-- right end -->
+              </div>
+            </div>
+            <!-- container end -->
+          </div>
+          <!-- spacer end -->
+        </div>
+      </section>
+      <section class="feedback bg-black">
+        <div class="container">
+          <div class="feedback_content text-white py-20 mx-5 text-center">
+            <div class="feedback_title mb-10 lg:mb-16 xl:mb-20">
+              <h2
+                class="font-bold text-4xl lg:text-6xl xl:text-[80px] mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]"
+              >
+                Positive feedback from our users
+              </h2>
+            </div>
+            <div
+              class="feedback_list grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+            >
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  “This AI SaaS tool has revolutionized the way we process and
+                  analyze data. This is a game-changer for our business.”
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download.jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Max Weber</h4>
+                    <p class="text-base font-light leading-5">HR Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "It answers immediately, and we've seen a significant
+                  reduction in response time. Our customers love it and so do
+                  we!"
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (23).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Douglas Smith</h4>
+                    <p class="text-base font-light leading-5">Businessman</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "It is accurate, fast and supports multiple languages support.
+                  It is a must for any international business success."
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (22).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Abraham Maslo</h4>
+                    <p class="text-base font-light leading-5">
+                      Founder @ Marketing Company
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "Security is a top concern for us, and AI SaaS takes it
+                  seriously. It's a reassuring layer of protection for our
+                  organization."
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (18).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Jack Fayol</h4>
+                    <p class="text-base font-light leading-5">HR Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "We were concerned about integrating their APIs were well
+                  documented, and their support team was super cool."
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (20).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Karen Lynn</h4>
+                    <p class="text-base font-light leading-5">
+                      Software Engineer
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "The return on investment has exceeded our expectations. it's
+                  an investment in the future of our business."
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (19).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Henry Ochi</h4>
+                    <p class="text-base font-light leading-5">Bank Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section
+      class="relative z-[1] -mt-[70px] bg_banner overflow-hidden rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[50px] lg:rounded-tr-[50px]"
+    >
+      <footer>
+        <div class="py-[50px] xl:pb-[100px] xl:pt-[130px]">
+          <div class="overflow-hidden">
+            <!-- Footer Text Slider -->
+            <div class="footer-text-slider">
+              <div class="flex items-center">
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+                <!-- Footer Slide Item -->
+                <img
+                  src="../img/footer-text-slider-icon.svg"
+                  alt="footer-text-slider-icon"
+                  width="60"
+                  height="60"
+                  class="h-8 w-8 lg:h-[60px] lg:w-[60px]"
+                />
+                <div
+                  class="block text-4xl font-bold -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+                >
+                  Start building software
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="global-container">
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- Footer Center -->
+          <div
+            class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px] mx-3"
+          >
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-8 w-full xl:px-18">
+              <a class="inline-block" href="/"
+                ><img
+                  src="../img/logo-dark.png"
+                  alt="logo"
+                  width="96"
+                  height="24"
+              /></a>
+              <p>
+                Our mission is to harness the power of AI to solve complex
+                business challenges &amp; decision-makers with data-driven
+                insights, and enhance user experiences across digital platforms.
+              </p>
+              <p>
+                Website: <a href="https://www.example.com">www.example.com</a>
+              </p>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Primary Pages
+              </h4>
+              <!-- Footer Title -->
+
+              <!-- Footer Navbar -->
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/about"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/services"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/pricing"
+                    >pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Utility pages
+              </h4>
+              <!-- Footer Title -->
+
+              <!-- Footer Navbar -->
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/signup"
+                    >Signup</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/login"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/error-404"
+                    >404 Not found</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="/reset-password"
+                    >Password Reset</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col gap-y-6 w-full">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Subscribe to our newsletter
+              </h4>
+              <!-- Footer Title -->
+              <!-- Footer Subscriber Form -->
+              <form action="#" method="post" class="">
+                <div class="relative h-[50px] max-w-[300px]">
+                  <input
+                    type="email"
+                    name="newsletter-email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
+                    required=""
+                  />
+                  <button
+                    type="submit"
+                    class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500"
+                  >
+                    <img
+                      src="../img/svg-export/newsletter.svg"
+                      alt="newsletter"
+                    />
+                  </button>
+                </div>
+              </form>
+              <!-- Footer Subscriber Form -->
+            </div>
+            <!-- Footer Widget -->
+          </div>
+          <!-- Footer Center -->
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- Footer Bottom -->
+          <div class="py-9 text-center">
+            <p>© Copyright 2023, All Rights Reserved by Mthemeus</p>
+          </div>
+          <!-- Footer Bottom -->
+        </div>
+      </footer>
     </section>
 
     <section class="solution" id="content_2">
