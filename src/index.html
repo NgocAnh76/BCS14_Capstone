@@ -19,6 +19,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- swiper  -->
     <link
       rel="stylesheet"
@@ -309,18 +314,20 @@
               class="banner_content flex flex-col pt-28 text-center text-black mx-5 items-center"
             >
               <h1
-                class="text-5xl font-bold mb-5 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] md:text-6xl lg:text-7xl xl:text-[120px]"
+                class="wow animate__animated animate__fadeInUp text-5xl font-bold mb-5 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] md:text-6xl lg:text-7xl xl:text-[120px]"
               >
                 Simplify your SaaS solution with AI
               </h1>
               <p
-                class="text-lg font-semibold md:text-xl max-w-[700px] xl:max-w-[980px]"
+                class="wow animate__animated animate__fadeInUp animate__delay-1s text-lg font-semibold md:text-xl max-w-[700px] xl:max-w-[980px]"
               >
                 Our AI SAAS tool is a cloud-based software delivery model. It
                 helps businesses forecast demand for products and services and
                 optimize inventory management and supply chain operations.
               </p>
-              <div class="flex gap-6 justify-center lg:mb-10 lg:mt-5">
+              <div
+                class="wow animate__animated animate__fadeInUp animate__delay-1s flex gap-6 justify-center lg:mb-10 lg:mt-5"
+              >
                 <button
                   class="button bg-black text-white px-6 py-4 text-base font-bold rounded-[2.5rem] mt-5 mb-10"
                 >
@@ -336,7 +343,9 @@
           </div>
         </section>
 
-        <section class="image object-cover rounded-2xl overflow-hidden mx-5">
+        <section
+          class="wow animate__animated animate__fadeInUp image object-cover rounded-2xl overflow-hidden mx-5"
+        >
           <div class="container">
             <img src="../img/download (21).jpeg" alt="" />
           </div>
@@ -407,7 +416,9 @@
           </div>
         </section> -->
         <section class="carousel pb-[60px] mx-5">
-          <div class="carousel_title">
+          <div
+            class="carousel_title wow animate__animated animate__fadeInUp animate__delay-1s"
+          >
             <p class="text-lg text-center my-10">
               Companies of all sizes trust us to find AI SaaS critical to their
               growth and innovation
@@ -1094,7 +1105,7 @@
           <div class="feedback_content text-white py-20 mx-5 text-center">
             <div class="feedback_title mb-10 lg:mb-16 xl:mb-20">
               <h2
-                class="font-bold text-4xl lg:text-6xl xl:text-[80px] mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]"
+                class="wow animate__animated animate__fadeInUp font-bold text-4xl lg:text-6xl xl:text-[80px] mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]"
               >
                 Positive feedback from our users
               </h2>
@@ -1103,7 +1114,7 @@
               class="feedback_list grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
             >
               <div
-                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+                class="wow animate__animated animate__fadeInRight feedback_item p-7 rounded-xl border-2 border-[#191919]"
               >
                 <img src="../img/svg-export/rating.svg" alt="" />
                 <p class="text-lg my-7 text-left">
@@ -1123,7 +1134,7 @@
                 </div>
               </div>
               <div
-                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+                class="wow animate__animated animate__fadeInRight feedback_item p-7 rounded-xl border-2 border-[#191919]"
               >
                 <img src="../img/svg-export/rating.svg" alt="" />
                 <p class="text-lg my-7 text-left">
@@ -1144,7 +1155,7 @@
                 </div>
               </div>
               <div
-                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+                class="wow animate__animated animate__fadeInRight feedback_item p-7 rounded-xl border-2 border-[#191919]"
               >
                 <img src="../img/svg-export/rating.svg" alt="" />
                 <p class="text-lg my-7 text-left">
@@ -1166,7 +1177,7 @@
                 </div>
               </div>
               <div
-                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+                class="wow animate__animated animate__fadeInLeft feedback_item p-7 rounded-xl border-2 border-[#191919]"
               >
                 <img src="../img/svg-export/rating.svg" alt="" />
                 <p class="text-lg my-7 text-left">
@@ -1187,7 +1198,7 @@
                 </div>
               </div>
               <div
-                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+                class="wow animate__animated animate__fadeInLeft feedback_item p-7 rounded-xl border-2 border-[#191919]"
               >
                 <img src="../img/svg-export/rating.svg" alt="" />
                 <p class="text-lg my-7 text-left">
@@ -1209,7 +1220,7 @@
                 </div>
               </div>
               <div
-                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+                class="wow animate__animated animate__fadeInLeft feedback_item p-7 rounded-xl border-2 border-[#191919]"
               >
                 <img src="../img/svg-export/rating.svg" alt="" />
                 <p class="text-lg my-7 text-left">
@@ -1456,11 +1467,28 @@
     ></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: autoplay,
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1180: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
 
         autoplay: {
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         },
       });
     </script>
