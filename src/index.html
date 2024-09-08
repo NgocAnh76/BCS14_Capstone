@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/output.css" rel="stylesheet" />
+    <!-- slick css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link font DM_Sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome  -->
     <link
       rel="stylesheet"
@@ -12,276 +42,641 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./custom.css" />
+
     <title>Home</title>
   </head>
   <body>
-    <header>
-      <header class="top-0 left-0 w-full h-auto absolute">
-        <div class="container">
+    <header class="z-[999] top-0 left-0 w-full h-auto absolute">
+      <div class="container">
+        <div
+          class="header_title flex item-center justify-between mx-5 mt-4 pt-5 relative"
+        >
+          <div class="header_left">
+            <a href="#">
+              <img src="../img/logo-dark.png" alt="" />
+            </a>
+          </div>
           <div
-            class="header_title flex item-center justify-between mx-5 mt-4 pt-5 relative"
+            class="header_social hidden lg:flex items-center justify-between"
           >
-            <div class="header_left">
-              <a href="#">
-                <img src="../img/logo-dark.png" alt="" />
-              </a>
-            </div>
-            <div
-              class="header_social hidden lg:flex items-center justify-between"
-            >
-              <ul class="flex justify-between gap-[30px] xl:gap-20">
-                <li class="social_item cursor-pointer">
-                  <a class="text-base text-black font-semibold py-5" href="#">
-                    Demo
-                    <i class="icon_demo fa-solid fa-angle-down"></i>
-                  </a>
-                  <!-- .header_block  -->
-                  <ul
-                    class="header_block min-w-[200px] p-5 bg-white rounded-lg absolute w-[200px] mt-7 top-[100%] translate-y-5"
-                  >
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >Home 01</a
-                      >
-                    </li>
-                    <li class="m-4">
-                      <a
-                        href="#"
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        >Home 02</a
-                      >
-                    </li>
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >Home 03</a
-                      >
-                    </li>
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >Home 04</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="cursor-pointer">
-                  <a
-                    class="text-base text-black font-semibold py-5"
-                    href="./demo.html"
-                  >
-                    About
-                  </a>
-                </li>
-                <li class="social_item cursor-pointer relative">
-                  <a class="text-base text-black font-semibold py-5" href="#">
-                    Service
-                    <i class="icon_demo fa-solid fa-angle-down"></i>
-                  </a>
-                  <!-- header block  -->
-                  <ul
-                    class="header_block p-5 bg-white rounded-lg absolute min-w-[200px] mt-7 top-[100%] translate-y-5"
-                  >
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >Services</a
-                      >
-                    </li>
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >Service Details</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="social_item cursor-pointer relative">
-                  <a class="text-base text-black font-semibold py-5" href="#">
-                    Pages
-                    <i class="icon_demo fa-solid fa-angle-down"></i>
-                  </a>
-                  <!-- header blog  -->
-                  <ul
-                    class="header_block min-w-[200px] p-5 bg-white rounded-lg absolute w-[200px] mt-7 top-[100%] translate-y-5"
-                  >
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >Blog</a
-                      >
-                    </li>
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >Team</a
-                      >
-                    </li>
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >FAQ</a
-                      >
-                    </li>
-                    <li class="m-4">
-                      <a
-                        class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                        href="#"
-                        >Portfolio</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="cursor-pointer relative">
-                  <a class="text-base text-black font-semibold py-5" href="#">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="header_login">
-              <button
-                class="header_login1 text-black font-bold py-2 px-6 rounded-3xl mr-5 border-stone-400 hover:bg-red-600 hover:text-white focus:border-none hidden lg:inline-block"
-              >
-                Login
-              </button>
-              <button
-                class="text-white bg-black font-bold py-2 px-6 rounded-3xl mr-5 hover:bg-red-600 focus:text-white focus:border-none hidden lg:inline-block"
-              >
-                Sign up free
-              </button>
-              <div class="header_right block lg:hidden">
-                <button
-                  class="bg-transparent font-medium focus:outline-none header_button"
-                  type="button"
-                  data-drawer-target="drawer-navigation"
-                  data-drawer-show="drawer-navigation"
-                  aria-controls="drawer-navigation"
+            <ul class="flex justify-between gap-[30px] xl:gap-20">
+              <li class="social_item cursor-pointer">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Demo
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- .header_block  -->
+                <ul
+                  class="header_block min-w-[200px] p-5 bg-white rounded-lg absolute w-[200px] mt-7 top-[100%] translate-y-5"
                 >
-                  <div class=" ">
-                    <span class="right_button"></span>
-                    <span class="right_button"></span>
-                    <span class="right_button"></span>
-                  </div>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="./index.html"
+                      >Home 01</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      href="#"
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      >Home 02</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Home 03</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Home 04</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="cursor-pointer">
+                <a
+                  class="text-base text-black font-semibold py-5"
+                  href="./about.html"
+                >
+                  About
+                </a>
+              </li>
+              <li class="social_item cursor-pointer relative">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Service
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- header block  -->
+                <ul
+                  class="header_block p-5 bg-white rounded-lg absolute min-w-[200px] mt-7 top-[100%] translate-y-5"
+                >
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Service Details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="social_item cursor-pointer relative">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Pages
+                  <i class="icon_demo fa-solid fa-angle-down"></i>
+                </a>
+                <!-- header blog  -->
+                <ul
+                  class="header_block min-w-[200px] p-5 bg-white rounded-lg absolute w-[200px] mt-7 top-[100%] translate-y-5"
+                >
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Team</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li class="m-4">
+                    <a
+                      class="font-semibold hover:text-[#FE330A] run text-[15px]"
+                      href="#"
+                      >Portfolio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="cursor-pointer relative">
+                <a class="text-base text-black font-semibold py-5" href="#">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header_login">
+            <button
+              class="button header_login1 text-black font-bold py-2 px-6 rounded-3xl mr-5 border-2 border-stone-400 hidden lg:inline-block"
+            >
+              Login
+            </button>
+            <button
+              class="button text-white bg-black font-bold py-2 px-6 rounded-3xl mr-5 hidden lg:inline-block"
+            >
+              Sign up free
+            </button>
+            <div class="header_right block lg:hidden">
+              <button
+                class="bg-transparent font-medium focus:outline-none header_button"
+                type="button"
+                data-drawer-target="drawer-navigation"
+                data-drawer-show="drawer-navigation"
+                aria-controls="drawer-navigation"
+              >
+                <div class=" ">
+                  <span class="right_button"></span>
+                  <span class="right_button"></span>
+                  <span class="right_button"></span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- drawer init and show -->
+        <!-- drawer component -->
+        <div
+          id="drawer-navigation"
+          class="fixed top-0 left-0 z-40 w-80 h-screen overflow-y-auto transition-transform -translate-x-full bg-white"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <h5
+            id="drawer-navigation-label"
+            class="text-base font-semibold text-transparent uppercase text-tr"
+          >
+            Menu
+          </h5>
+          <button
+            type="button"
+            data-drawer-hide="drawer-navigation"
+            aria-controls="drawer-navigation"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm absolute top-0 right-0 inline-flex items-center close_menu"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="py-4 overflow-y-auto">
+            <ul>
+              <li class="menu_list py-[10px] flex mt-[10px]">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Home
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a class="font-semibold ml-5" href="#"> About </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Service
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a
+                  class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
+                  href="#"
+                >
+                  Pages
+                  <img
+                    class="rotate-90"
+                    src="../img/cheveron-right-1.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="menu_list py-[10px] flex">
+                <a class="font-semibold ml-5" href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div
+        class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] lg:rounded-bl-[50px] lg:rounded-br-[50px] bg-[#EFEAE3]"
+      >
+        <section class="banner">
+          <div class="container">
+            <div
+              class="banner_content flex flex-col pt-28 text-center text-black mx-5 items-center"
+            >
+              <h1
+                class="text-5xl font-bold mb-5 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] md:text-6xl lg:text-7xl xl:text-[120px]"
+              >
+                Simplify your SaaS solution with AI
+              </h1>
+              <p
+                class="text-lg font-semibold md:text-xl max-w-[700px] xl:max-w-[980px]"
+              >
+                Our AI SAAS tool is a cloud-based software delivery model. It
+                helps businesses forecast demand for products and services and
+                optimize inventory management and supply chain operations.
+              </p>
+              <div class="flex gap-6 justify-center lg:mb-10 lg:mt-5">
+                <button
+                  class="button bg-black text-white px-6 py-4 text-base font-bold rounded-[2.5rem] mt-5 mb-10"
+                >
+                  Get started for free
+                </button>
+                <button
+                  class="button text-black px-6 py-4 text-base font-bold rounded-[2.5rem] mt-5 border-black border-2 h-14 leading-5"
+                >
+                  Lean more
                 </button>
               </div>
             </div>
           </div>
-          <!-- drawer init and show -->
-          <!-- drawer component -->
-          <div
-            id="drawer-navigation"
-            class="fixed top-0 left-0 z-40 w-80 h-screen overflow-y-auto transition-transform -translate-x-full bg-white"
-            tabindex="-1"
-            aria-labelledby="drawer-navigation-label"
-          >
-            <h5
-              id="drawer-navigation-label"
-              class="text-base font-semibold text-transparent uppercase text-tr"
-            >
-              Menu
-            </h5>
-            <button
-              type="button"
-              data-drawer-hide="drawer-navigation"
-              aria-controls="drawer-navigation"
-              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm absolute top-0 right-0 inline-flex items-center close_menu"
-            >
-              <svg
-                aria-hidden="true"
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+        </section>
+
+        <section class="image object-cover rounded-2xl overflow-hidden mx-5">
+          <div class="container">
+            <img src="../img/download (21).jpeg" alt="" />
+          </div>
+        </section>
+        <div class="container">
+          <div class="bg-[#DBD6CF] w-full h-[1px] my-10 lg:my-16"></div>
+        </div>
+        <!-- #DBD6CF -->
+        <!-- <section class="carousel">
+          <div class="container">
+            <div class="carousel_content">
+              <div class="carousel_title">
+                <p class="text-lg text-center mb-10">
+                  Companies of all sizes trust us to find AI SaaS critical to
+                  their growth and innovation
+                </p>
+              </div>
+              <div
+                class="carousel_list flex gap-5 justify-between items-center"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="sr-only">Close menu</span>
-            </button>
-            <div class="py-4 overflow-y-auto">
-              <ul>
-                <li class="menu_list py-[10px] flex mt-[10px]">
-                  <a
-                    class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
-                    href="#"
-                  >
-                    Home
-                    <img
-                      class="rotate-90"
-                      src="../img/cheveron-right-1.svg"
-                      alt=""
-                    />
-                  </a>
-                </li>
-                <li class="menu_list py-[10px] flex">
-                  <a class="font-semibold ml-5" href="#"> About </a>
-                </li>
-                <li class="menu_list py-[10px] flex">
-                  <a
-                    class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
-                    href="#"
-                  >
-                    Service
-                    <img
-                      class="rotate-90"
-                      src="../img/cheveron-right-1.svg"
-                      alt=""
-                    />
-                  </a>
-                </li>
-                <li class="menu_list py-[10px] flex">
-                  <a
-                    class="w-[73%] h-auto font-semibold flex items-center justify-between ml-5"
-                    href="#"
-                  >
-                    Pages
-                    <img
-                      class="rotate-90"
-                      src="../img/cheveron-right-1.svg"
-                      alt=""
-                    />
-                  </a>
-                </li>
-                <li class="menu_list py-[10px] flex">
-                  <a class="font-semibold ml-5" href="#"> Contact </a>
-                </li>
-              </ul>
+                <div class="carousel_on self-start pr-[105px] w-[146px]">
+                  <img
+                    class="max-w-full"
+                    width="138px"
+                    height="35px"
+                    src="../img/brand-1 (1).png"
+                    alt="brand-1"
+                  />
+                </div>
+                <div class="carousel_on self-end pr-[105px] w-[146px]">
+                  <img
+                    class="max-w-full"
+                    width="138px"
+                    height="35px"
+                    src="../img/brand-2.png"
+                    alt="brand-2"
+                  />
+                </div>
+                <div class="carousel_on self-start pr-[105px] w-[146px]">
+                  <img
+                    class="max-w-full"
+                    width="138px"
+                    height="35px"
+                    src="../img/brand-3 (1).png"
+                    alt="brand-3"
+                  />
+                </div>
+                <div class="carousel_on self-end pr-[105px] w-[146px]">
+                  <img
+                    class="max-w-full"
+                    width="138px"
+                    height="35px"
+                    src="../img/brand-4 (1).png"
+                    alt="brand-4"
+                  />
+                </div>
+                <div class="carousel_on pr-[105px] w-[146px]">
+                  <img
+                    class="max-w-full"
+                    width="138px"
+                    height="35px"
+                    src="../img/brand-5 (1).png"
+                    alt="brand-5"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
-    </header>
-    <main>
-      <div>
-        <section class="banner"></section>
-        <section class="image"></section>
-        <section class="carousel"></section>
+        </section> -->
+        <section class="carousel pb-[60px] mx-5">
+          <div class="carousel_title">
+            <p class="text-lg text-center my-10">
+              Companies of all sizes trust us to find AI SaaS critical to their
+              growth and innovation
+            </p>
+          </div>
+          <div class="swiper mySwiper lg:my-14">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-1 (1).png" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-2.png" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-3 (1).png" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-4 (1).png" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-5 (1).png" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-1 (1).png" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-2.png" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-3 (1).png" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+                style="width: 146.5px; margin-right: 105px"
+              >
+                <img class="max-w-full" src="../img/brand-4 (1).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div
+          class="banner_gradient1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]"
+        ></div>
+        <div
+          class="banner_gradient2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]"
+        ></div>
       </div>
+
       <section class="feature"></section>
       <section class="access"></section>
       <section class="solution"></section>
       <section class="task"></section>
       <section class="cost"></section>
       <section class="information"></section>
-      <sention class="feedback"></sention>
+      <section class="feedback bg-black">
+        <div class="container">
+          <div class="feedback_content text-white py-20 mx-5 text-center">
+            <div class="feedback_title mb-10 lg:mb-16 xl:mb-20">
+              <h2
+                class="font-bold text-4xl lg:text-6xl xl:text-[80px] mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]"
+              >
+                Positive feedback from our users
+              </h2>
+            </div>
+            <div
+              class="feedback_list grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+            >
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  “This AI SaaS tool has revolutionized the way we process and
+                  analyze data. This is a game-changer for our business.”
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download.jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Max Weber</h4>
+                    <p class="text-base font-light leading-5">HR Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "It answers immediately, and we've seen a significant
+                  reduction in response time. Our customers love it and so do
+                  we!"
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (23).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Douglas Smith</h4>
+                    <p class="text-base font-light leading-5">Businessman</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "It is accurate, fast and supports multiple languages support.
+                  It is a must for any international business success."
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (22).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Abraham Maslo</h4>
+                    <p class="text-base font-light leading-5">
+                      Founder @ Marketing Company
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "Security is a top concern for us, and AI SaaS takes it
+                  seriously. It's a reassuring layer of protection for our
+                  organization."
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (18).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Jack Fayol</h4>
+                    <p class="text-base font-light leading-5">HR Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "We were concerned about integrating their APIs were well
+                  documented, and their support team was super cool."
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (20).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Karen Lynn</h4>
+                    <p class="text-base font-light leading-5">
+                      Software Engineer
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="feedback_item p-7 rounded-xl border-2 border-[#191919]"
+              >
+                <img src="../img/svg-export/rating.svg" alt="" />
+                <p class="text-lg my-7 text-left">
+                  "The return on investment has exceeded our expectations. it's
+                  an investment in the future of our business."
+                </p>
+                <div class="feedback_text flex">
+                  <div
+                    class="w-[60px] h-[60px] object-cover rounded-full overflow-hidden"
+                  >
+                    <img src="../img/download (19).jpeg" alt="" />
+                  </div>
+                  <div class="ml-5 text-left">
+                    <h4 class="text-lg font-semibold">Henry Ochi</h4>
+                    <p class="text-base font-light leading-5">Bank Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- jquery cdn  -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel_list").slick({
+          slidesToShow: auto,
+          slidesToScoll: 1,
+          autoplay: true,
+        });
+      });
+    </script> -->
     <!-- flowbite  -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- swiper  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: autoplay,
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
   </body>
 </html>

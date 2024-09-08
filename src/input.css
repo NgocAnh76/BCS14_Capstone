@@ -10,6 +10,16 @@
 .run {
   transition: all 0.3s;
 }
+
+.banner_gradient1 {
+  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
+  filter: blur(55px);
+}
+.banner_gradient2 {
+  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+  filter: blur(55px);
+}
+
 /* nút đóng tắt menu  */
 .header_button {
   display: flex;
@@ -99,22 +109,7 @@ header .right_button::before {
 .border_img {
   border-radius: 1.5rem;
 }
-/* delivering  */
-.delivering_button {
-  @apply bg-black text-white px-6 py-4 text-base font-bold;
-  border-radius: 2.5rem;
-}
-.delivering_button::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* transform: translateY(0); */
-  transform-origin: top right;
-  transition-duration: 300ms;
-  background-color: aquamarine;
-}
+
 /* .values  */
 .values .values_item:before {
   content: "";
@@ -135,18 +130,34 @@ header .right_button::before {
     transform: scaleX(1);
   }
 }
-/* team  */
-.team_button {
-  @apply bg-black text-white px-6 py-4 text-base font-bold rounded-[2.5rem] mt-5 mb-10;
+.button {
+  /* padding: 10px 25px; */
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
 }
-.team .team_button:after {
+.button:after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  border-radius: 2.5rem;
   width: 100%;
   height: 100%;
-  /* transform: translateY(0); */
-  transform-origin: top right;
-  transition-duration: 300ms;
-  background-color: aquamarine;
+  left: 0px;
+  top: 0;
+  background-color: #fe330a;
+  z-index: -1;
+  /* background-color: transparent; */
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-100%);
 }
+.button:hover::after {
+  transform: translateY(0);
+}
+button:hover {
+  border-color: #fe330a;
+  color: white;
+}
+
+/* HOME  */
+/* carousel  */

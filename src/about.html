@@ -73,7 +73,7 @@
                   <li class="m-4">
                     <a
                       class="font-semibold hover:text-[#FE330A] run text-[15px]"
-                      href="#"
+                      href="./index.html"
                       >Home 01</a
                     >
                   </li>
@@ -182,12 +182,12 @@
 
           <div class="header_login">
             <button
-              class="header_login1 text-black font-bold py-2 px-6 rounded-3xl mr-5 border-stone-400 hover:bg-red-600 hover:text-white focus:border-none hidden lg:inline-block"
+              class="button header_login1 text-black font-bold py-2 px-6 rounded-3xl mr-5 border-stone-400 border-2 hidden lg:inline-block"
             >
               Login
             </button>
             <button
-              class="text-white bg-black font-bold py-2 px-6 rounded-3xl mr-5 hover:bg-red-600 focus:text-white focus:border-none hidden lg:inline-block"
+              class="button text-white bg-black font-bold py-2 px-6 rounded-3xl mr-5 border-none hidden lg:inline-block"
             >
               Sign up free
             </button>
@@ -334,7 +334,9 @@
             >
               We are a trusted partner in our clients' AI journey
             </h2>
-            <div class="px-5 object-cover">
+            <div
+              class="px-5 object-cover animate__fadeInUp wow animate__animated animate__delay-1s"
+            >
               <img
                 class="border_img"
                 src="../img/about-hero-image.jpg"
@@ -351,7 +353,9 @@
             <ul
               class="grid gap-10 gap-y-5 grid-cols-1 sm:grid-cols-2 sm:text-left lg:grid-cols-4"
             >
-              <li class="number_item py-3">
+              <li
+                class="number_item py-3 wow animate__animated animate__fadeInUp"
+              >
                 <h3
                   class="text-5xl font-bold xl:text-[80px] leading-[80px] text-[#fe330a]"
                 >
@@ -359,7 +363,11 @@
                 </h3>
                 <p class="text-lg">Successful Implementations</p>
               </li>
-              <li class="number_item py-3">
+              <li
+                class="number_item py-3 wow animate__animated animate__fadeInUp animate__delay-0.2s"
+                data-wow-duration="1.3s"
+                ,data-wow-delay="0.2s"
+              >
                 <h3
                   class="text-5xl font-bold xl:text-[80px] leading-[80px] text-[#fe330a]"
                 >
@@ -368,7 +376,11 @@
 
                 <p class="text-lg">Client Satisfaction Rate</p>
               </li>
-              <li class="number_item py-3">
+              <li
+                class="number_item py-3 wow animate__animated animate__fadeInUp animate__delay-0.4s"
+                data-wow-duration="1.6s"
+                ,data-wow-delay="0.4s"
+              >
                 <h3
                   class="text-5xl font-bold xl:text-[80px] leading-[80px] text-[#fe330a]"
                 >
@@ -376,7 +388,11 @@
                 </h3>
                 <p class="text-lg">Awards and Recognitions</p>
               </li>
-              <li class="number_item py-3">
+              <li
+                class="number_item py-3 wow animate__animated animate__fadeInUp animate__delay-0.6s"
+                data-wow-duration="1.9s"
+                ,data-wow-delay="0.6s"
+              >
                 <h3
                   class="text-5xl font-bold xl:text-[80px] leading-[80px] text-[#fe330a]"
                 >
@@ -395,7 +411,7 @@
           <div
             class="delivering_conten px-4 sm:grid grid-cols-1 items-center gap-12 sm:grid-cols-2 xl:grid-cols-[minmax(0,_1.3fr)_1fr]"
           >
-            <div>
+            <div class="wow animate__animated animate__fadeInLeft">
               <h2 class="text-4xl font-bold xl:text-[80px] leading-[80px]">
                 Delivering the best solutions with AI
               </h2>
@@ -409,9 +425,15 @@
                 harness With a team of AI experts and data scientists their full
                 potential & stay competitive in an increasingly digital world.
               </p>
-              <button class="delivering_button my-12">Get in touch</button>
+              <button
+                class="button bg-black text-white px-6 py-4 text-base font-bold rounded-[2.5rem] my-12"
+              >
+                Get in touch
+              </button>
             </div>
-            <div class="delivering_image object-cover">
+            <div
+              class="wow animate__animated animate__fadeInRight delivering_image object-cover"
+            >
               <img
                 class="rounded-lg w-full h-auto"
                 src="../img/about-image.png"
@@ -425,7 +447,7 @@
       <section class="values">
         <div class="container">
           <div
-            class="values_content my-20 mx-5 px-10 py-20 bg-black text-white rounded-[50px] sm:px-[50px] md:mx-[50px] lg:px-[100px] xl:py-32 xl:mx-0"
+            class="wow animate__animated animate__fadeInUp values_content my-20 mx-5 px-10 py-20 bg-black text-white rounded-[50px] sm:px-[50px] md:mx-[50px] lg:px-[100px] xl:py-32 xl:mx-0"
           >
             <div class="values_title text-center mx-auto xl:max-w-[745px]">
               <h2
@@ -482,17 +504,23 @@
       <section class="team">
         <div class="container">
           <div class="team_content mx-5 mb-20">
-            <div class="team_title md:flex md:justify-between md:items-center">
+            <div
+              class="wow animate__animated animate__fadeInUp team_title md:flex md:justify-between md:items-center"
+            >
               <h2
                 class="text-4xl font-bold max-w-sm lg:text-[80px] lg:leading-[80px] lg:max-w-3xl lg:mb-5 xl:max-w-[745px]"
               >
                 Our team consists of a group of talents
               </h2>
-              <button class="team_button">Join our team</button>
+              <button
+                class="button bg-black text-white px-6 py-4 text-base font-bold rounded-[2.5rem] mt-5 mb-10"
+              >
+                Join our team
+              </button>
             </div>
             <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <li
-                class="wow animate__animated animate__flipInY p-5 rounded-xl bg-[#EFEAE3]"
+                class="wow animate__animated animate__flipInY animate__delay-1s p-5 rounded-xl bg-[#EFEAE3]"
               >
                 <div class="team_image">
                   <img
@@ -549,7 +577,7 @@
                 </div>
               </li>
               <li
-                class="wow animate__animated animate__flipInY p-5 rounded-xl bg-[#EFEAE3]"
+                class="wow animate__animated animate__flipInY animate__delay-1s p-5 rounded-xl bg-[#EFEAE3]"
               >
                 <div class="team_image">
                   <img
@@ -606,7 +634,7 @@
                 </div>
               </li>
               <li
-                class="wow animate__animated animate__flipInY p-5 rounded-xl bg-[#EFEAE3]"
+                class="wow animate__animated animate__flipInY animate__delay-1s p-5 rounded-xl bg-[#EFEAE3]"
               >
                 <div class="team_image">
                   <img
@@ -844,7 +872,9 @@
           <div
             class="connect_content items-center text-white py-10 grid grid-cols-1 md:grid-cols-2 md:grid-cols-[minmax(0,_1fr)_1.4fr] gap-14"
           >
-            <div class="connect_top mx-5 md:mx-0 md:order-2">
+            <div
+              class="wow animate__animated animate__fadeInDown connect_top mx-5 md:mx-0 md:order-2"
+            >
               <h2 class="text-4xl font-bold mb-5 lg:text-6xl leading-[60px]">
                 We always want to connect our clients
               </h2>
@@ -888,7 +918,9 @@
                 </li>
               </ul>
             </div>
-            <div class="connect_bottom mx-5 md:order-1">
+            <div
+              class="wow animate__animated animate__fadeInLeft connect_bottom mx-5 md:order-1"
+            >
               <img
                 class="w-full h-auto rounded-[20px]"
                 src="../img/about-contact-img.jpg"
