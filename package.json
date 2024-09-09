@@ -3,7 +3,8 @@
     "tailwindcss": "^3.4.10"
   },
   "scripts": {
-    "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+    "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "build": "react-scripts build"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
