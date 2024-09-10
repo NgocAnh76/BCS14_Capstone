@@ -3,8 +3,13 @@
     "tailwindcss": "^3.4.10"
   },
   "scripts": {
+<<<<<<< HEAD
     "build": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css && node copyFiles.js",
     "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+=======
+    "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "build": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css && node copyFiles.js"
+>>>>>>> main
   },
   "dependencies": {
     "animate.css": "^4.1.1",
