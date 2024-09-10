@@ -4,7 +4,7 @@
   },
   "scripts": {
     "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
-    "build": "react-scripts build"
+    "build": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css && node copyFiles.js"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
